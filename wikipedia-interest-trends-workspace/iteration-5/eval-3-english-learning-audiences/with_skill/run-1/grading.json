@@ -1,0 +1,65 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page(s)"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'вересень 2024 – серпень 2026'"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "Intervals and confidence for every language"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "TOEFL and IELTS, learning intent explained"
+  },
+  {
+   "text": "Response ranks or prioritises the five language audiences explicitly",
+   "passed": true,
+   "evidence": "VI 1st, TR 2nd, ES/DE lower, PL last"
+  },
+  {
+   "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+   "passed": true,
+   "evidence": "Size, intensity and growth cited"
+  },
+  {
+   "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+   "passed": false,
+   "evidence": "Names language editions as countries ('Іспанія', 'Німеччина', 'В'єтнам'), ignoring that es.wikipedia is mostly Latin America; also garbles the note ('Австрійські читачі блокуються')"
+  },
+  {
+   "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+   "passed": true,
+   "evidence": "'Википедія показує інтерес (цікавість), але не готовність платити'"
+  },
+  {
+   "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+   "passed": true,
+   "evidence": "'+7% (95% ДІ: -20% до +43%) – немає явного зростання, але й немає спаду'"
+  },
+  {
+   "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+   "passed": false,
+   "evidence": "Unsupported or garbled claims: VN audience 'практично 100% місцева', 'Австрійські читачі', wiki declines attributed only to 'технічні оновлення'"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 2,
+  "total": 11,
+  "pass_rate": 0.82
+ }
+}

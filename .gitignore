@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.wikitrends/
+.pytest_cache/
+.mypy_cache/
+wikitrends-output/
+out/
+
+# Local handoff notes are not part of the public submission.
+/HANDOFF.md

@@ -1,0 +1,40 @@
+{
+ "expectations": [
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "Sub-topics were found with the skill's automatic tools (expand or discover output exists), not only a hand-picked list",
+   "passed": true,
+   "evidence": "The basket comes from expand (10 verified items); sub-topics were then analysed as separate topics (discover --seed not used)"
+  },
+  {
+   "text": "Lists at least 3 sub-topics with a growth estimate and an interval or confidence level",
+   "passed": true,
+   "evidence": "Black hole -9% [-23%, +6%], Milky Way -18% [-27%, -6%], Cosmology -25% plus forecast, exoplanet, space exploration"
+  },
+  {
+   "text": "Does not call a sub-topic growing when its 95% interval crosses zero",
+   "passed": true,
+   "evidence": "'Чорна діра ... практично стабільна' for an interval crossing zero"
+  },
+  {
+   "text": "Mentions a seasonality/school-year pattern or a data caveat (bot-detection update, low volume)",
+   "passed": true,
+   "evidence": "School-holiday lows in June-July, launch Sep/Jan; bot-detection caveat"
+  },
+  {
+   "text": "Recommends a concrete starting module and ties the reason to numbers from the output",
+   "passed": true,
+   "evidence": "Start with black holes / Milky Way, with views/month and relative growth cited"
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 0,
+  "total": 6,
+  "pass_rate": 1.0
+ }
+}

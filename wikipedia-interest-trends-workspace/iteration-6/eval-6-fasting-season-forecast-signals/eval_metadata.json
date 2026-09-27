@@ -1,0 +1,14 @@
+{
+ "eval_id": 6,
+ "eval_name": "fasting-season-forecast-signals",
+ "prompt": "Плануємо запуск застосунку про інтервальне голодування в Чехії та Німеччині. Коли в році пік інтересу, чого чекати в наступні 12 місяців, і чи підтверджують це дані Google?",
+ "assertions": [
+  "report.pdf exists in outputs and has exactly 1 page",
+  "response.md is written in Ukrainian",
+  "States the seasonal peak month(s) for each of the two languages/countries from the tool output",
+  "Gives a 12-month forecast as a range (80% interval), not a single number, with a caveat that it is a scenario",
+  "Reports the Google Trends result for CZ and DE and whether it agrees with Wikipedia (or clearly states it was unavailable)",
+  "Includes App Store competition context for at least one country",
+  "The PDF includes the Second signals section (signals were run before report)"
+ ]
+}

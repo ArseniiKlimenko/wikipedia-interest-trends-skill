@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bar-label { font-size: 14px; font-family: Arial, sans-serif; }
+      .bar-value { font-size: 12px; font-family: Arial, sans-serif; fill: white; }
+      .title { font-size: 28px; font-weight: bold; font-family: Arial, sans-serif; }
+      .subtitle { font-size: 14px; font-family: Arial, sans-serif; fill: #666; }
+      .legend { font-size: 12px; font-family: Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="600" fill="#f9f9f9"/>
+
+  <!-- Title -->
+  <text x="50" y="50" class="title">Interest in Learning English by Wikipedia Version</text>
+  <text x="50" y="75" class="subtitle">90-day pageview analysis (June 28 - September 26, 2026)</text>
+
+  <!-- Grid lines -->
+  <line x1="80" y1="100" x2="80" y2="480" stroke="#ddd" stroke-width="1"/>
+  <line x1="80" y1="480" x2="950" y2="480" stroke="#ddd" stroke-width="1"/>
+  <rect x="120" y="130.0" width="120" height="350.0" fill="#2E7D32" opacity="0.8"/>
+  <rect x="120" y="130.0" width="120" height="350.0" fill="none" stroke="#2E7D32" stroke-width="2"/>
+
+  <!-- Label -->
+  <text x="180.0" y="510" text-anchor="middle" class="bar-label">German</text>
+
+  <!-- Value inside bar -->
+  <text x="180.0" y="310.0" text-anchor="middle" class="bar-value" font-weight="bold">40,101</text>
+
+  <!-- Daily average below -->
+  <text x="180.0" y="535" text-anchor="middle" class="bar-label" font-size="11">441/day</text>
+  <rect x="260" y="182.69943392932845" width="120" height="297.30056607067155" fill="#1976D2" opacity="0.8"/>
+  <rect x="260" y="182.69943392932845" width="120" height="297.30056607067155" fill="none" stroke="#1976D2" stroke-width="2"/>
+
+  <!-- Label -->
+  <text x="320.0" y="510" text-anchor="middle" class="bar-label">Spanish</text>
+
+  <!-- Value inside bar -->
+  <text x="320.0" y="336.34971696466425" text-anchor="middle" class="bar-value" font-weight="bold">34,063</text>
+
+  <!-- Daily average below -->
+  <text x="320.0" y="535" text-anchor="middle" class="bar-label" font-size="11">374/day</text>
+  <rect x="400" y="352.1702700680781" width="120" height="127.8297299319219" fill="#F57C00" opacity="0.8"/>
+  <rect x="400" y="352.1702700680781" width="120" height="127.8297299319219" fill="none" stroke="#F57C00" stroke-width="2"/>
+
+  <!-- Label -->
+  <text x="460.0" y="510" text-anchor="middle" class="bar-label">Polish</text>
+
+  <!-- Value inside bar -->
+  <text x="460.0" y="421.085135034039" text-anchor="middle" class="bar-value" font-weight="bold">14,646</text>
+
+  <!-- Daily average below -->
+  <text x="460.0" y="535" text-anchor="middle" class="bar-label" font-size="11">161/day</text>
+  <rect x="540" y="403.42959028453157" width="120" height="76.57040971546844" fill="#C62828" opacity="0.8"/>
+  <rect x="540" y="403.42959028453157" width="120" height="76.57040971546844" fill="none" stroke="#C62828" stroke-width="2"/>
+
+  <!-- Label -->
+  <text x="600.0" y="510" text-anchor="middle" class="bar-label">Turkish</text>
+
+  <!-- Value inside bar -->
+  <text x="600.0" y="446.7147951422658" text-anchor="middle" class="bar-value" font-weight="bold">8,773</text>
+
+  <!-- Daily average below -->
+  <text x="600.0" y="535" text-anchor="middle" class="bar-label" font-size="11">96/day</text>
+  <rect x="680" y="418.44168474601634" width="120" height="61.55831525398369" fill="#6A1B9A" opacity="0.8"/>
+  <rect x="680" y="418.44168474601634" width="120" height="61.55831525398369" fill="none" stroke="#6A1B9A" stroke-width="2"/>
+
+  <!-- Label -->
+  <text x="740.0" y="510" text-anchor="middle" class="bar-label">Vietnamese</text>
+
+  <!-- Value inside bar -->
+  <text x="740.0" y="454.22084237300817" text-anchor="middle" class="bar-value" font-weight="bold">7,053</text>
+
+  <!-- Daily average below -->
+  <text x="740.0" y="535" text-anchor="middle" class="bar-label" font-size="11">78/day</text>
+
+  <!-- Legend -->
+  <g transform="translate(50, 530)">
+    <text class="legend" font-weight="bold">Key Findings:</text>
+    <text class="legend" y="20">• German Wikipedia leads with 40,101 views (35.6% of total)</text>
+    <text class="legend" y="40">• Spanish is second with 34,063 views (30.2% of total)</text>
+    <text class="legend" y="60">• Combined German + Spanish = 65.8% of all views</text>
+  </g>
+</svg>

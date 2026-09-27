@@ -1,0 +1,793 @@
+{
+ "tool": "wikipedia-interest-trends",
+ "version": "1.1.0",
+ "generated_at": "2026-09-27T20:30:22",
+ "params": {
+  "topics": [
+   "intermittent fasting=Q1666254"
+  ],
+  "langs": [
+   "cs",
+   "de"
+  ],
+  "agent": "user",
+  "access": "all-access",
+  "redirects": "auto",
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "report_lang": "uk"
+ },
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "months": [
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "topics": [
+  {
+   "key": "t0",
+   "label": "intermittent fasting",
+   "items": [
+    "Q1666254"
+   ],
+   "articles": {
+    "cs": [
+     {
+      "ref": "Q1666254",
+      "title": "Přerušovaný půst",
+      "name": "Інтервальне голодування"
+     }
+    ],
+    "de": [
+     {
+      "ref": "Q1666254",
+      "title": "Intermittierendes Fasten",
+      "name": "Інтервальне голодування"
+     }
+    ]
+   },
+   "missing": {
+    "cs": [],
+    "de": []
+   }
+  }
+ ],
+ "series": [
+  {
+   "id": "t0|cs",
+   "name": "cs (чеська)",
+   "topic": "intermittent fasting",
+   "lang": "cs",
+   "wiki": "cs.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "Přerušovaný půst",
+     "ref": "Q1666254",
+     "redirects_added": 0,
+     "views_recent_month_avg": 183.16666666666666,
+     "share_of_basket": 1.0,
+     "growth_rel": -0.3369018787773075
+    }
+   ],
+   "views_recent_month_avg": 183.16666666666666,
+   "views_prev_month_avg": 395.0833333333333,
+   "daily_avg_recent": 6.021917808219178,
+   "share_ppm_recent": 3.0810928585344755,
+   "project_growth": -0.1256716656099166,
+   "spike_share": 0.1651534803285776,
+   "spike_days": 11,
+   "top_spikes": [
+    {
+     "date": "2025-04-14",
+     "views": 508,
+     "x_normal": 36.3
+    },
+    {
+     "date": "2025-08-15",
+     "views": 164,
+     "x_normal": 27.3
+    },
+    {
+     "date": "2024-10-17",
+     "views": 110,
+     "x_normal": 7.9
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.3369018787773075,
+   "growth_rel_lo": -0.5135851290488478,
+   "growth_rel_hi": -0.08396426385080194,
+   "growth_rel_with_spikes": -0.4697469442491816,
+   "growth_abs": -0.42023452413416973,
+   "growth_abs_lo": -0.5900821646701601,
+   "growth_abs_hi": -0.1753497603435852,
+   "trend_annual": -0.407034851129947,
+   "trend_p": 0.0001207086399803714,
+   "months_up": 1,
+   "momentum_6m": -0.43114364485596346,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     393.0,
+     634.0,
+     329.0,
+     294.0,
+     489.0,
+     272.0,
+     366.0,
+     958.0,
+     225.0,
+     238.0,
+     157.0,
+     386.0,
+     270.0,
+     141.0,
+     151.0,
+     218.0,
+     474.0,
+     196.0,
+     179.0,
+     135.0,
+     109.0,
+     115.0,
+     91.0,
+     119.0
+    ],
+    "views_clean": [
+     393.0,
+     411.0,
+     273.0,
+     278.0,
+     489.0,
+     272.0,
+     366.0,
+     383.0,
+     225.0,
+     238.0,
+     157.0,
+     182.0,
+     198.0,
+     141.0,
+     151.0,
+     218.0,
+     474.0,
+     196.0,
+     179.0,
+     135.0,
+     109.0,
+     115.0,
+     91.0,
+     119.0
+    ],
+    "share_ppm": [
+     6.308916430118421,
+     5.7984103495784005,
+     3.9650166436293874,
+     3.951065850467422,
+     5.863548323750029,
+     3.8994729632909344,
+     4.89319014860712,
+     5.715547270515779,
+     3.0558130398713383,
+     4.229499164389579,
+     2.5670435331832313,
+     3.164384800388781,
+     3.455108215210803,
+     2.1188261444692906,
+     2.0718006527132493,
+     3.635313549212148,
+     7.031597685803294,
+     3.361552249575634,
+     3.0840697425673573,
+     2.4613424741636982,
+     1.8229595229398552,
+     2.1421929965004947,
+     1.71274564136819,
+     2.3121265988404005
+    ]
+   },
+   "seasonality": {
+    "strength": 0.6657467261046832,
+    "peak": [
+     [
+      "Jan",
+      0.8084217170935082
+     ],
+     [
+      "Apr",
+      0.1659509323877062
+     ]
+    ],
+    "low": [
+     [
+      "Jul",
+      -0.2796288591145296
+     ],
+     [
+      "Nov",
+      -0.2566315546701996
+     ]
+    ],
+    "indices": [
+     0.5924544853761082,
+     0.05189042120714833,
+     0.13768787849770764,
+     0.1535370050425765,
+     -0.2577312936388376,
+     0.018160581675595602,
+     -0.3279887263307954,
+     -0.05661334370010061,
+     0.10103795526567035,
+     -0.14104902284709042,
+     -0.2965634684419743,
+     0.025177527893991594
+    ]
+   },
+   "forecast": {
+    "method": "ETS(A,Ad,A) on log",
+    "chosen": "ets",
+    "next12": 0.05018626273429727,
+    "next12_lo80": -0.43972434569987,
+    "next12_hi80": 1.5466552115481949,
+    "skill": null,
+    "months": [
+     "2026-09",
+     "2026-10",
+     "2026-11",
+     "2026-12",
+     "2027-01",
+     "2027-02",
+     "2027-03",
+     "2027-04",
+     "2027-05",
+     "2027-06",
+     "2027-07",
+     "2027-08"
+    ],
+    "median": [
+     5.024713513294582,
+     4.051643386620978,
+     2.783885749501739,
+     2.7712927448417712,
+     4.144309891606856,
+     2.7442231320467356,
+     3.390274528615053,
+     4.013012230878255,
+     2.1179938810144865,
+     2.9760302254814164,
+     1.7840724785441073,
+     2.2022463943642956
+    ],
+    "lo80": [
+     2.619834445605899,
+     2.1639852009015947,
+     1.3594953421014422,
+     1.2475379532809536,
+     1.7263757574248226,
+     1.0416111163211015,
+     1.2170055535276205,
+     1.359918528506968,
+     0.6893271122421665,
+     0.953404776431509,
+     0.5193405699440432,
+     0.6163937811305742
+    ],
+    "hi80": [
+     6.802293065041867,
+     7.178279599652012,
+     5.494774576509266,
+     6.0931283556479485,
+     9.808619311188984,
+     7.1862807221777505,
+     9.513185414194092,
+     11.686291666031812,
+     6.668685385416821,
+     9.590569147189154,
+     6.023269120089811,
+     7.872235606151658
+    ]
+   },
+   "changepoints": [],
+   "driven_by": null,
+   "top_article_share": 1.0,
+   "status": "ok",
+   "confidence": {
+    "grade": "medium",
+    "direction": "down",
+    "good": [
+     "95% interval excludes zero (-51% to -8%)",
+     "raw views move the same way (-42%)",
+     "11 of the last 12 months moved the same way year-over-year",
+     "spikes are only 17% of views"
+    ],
+    "bad": [
+     "low volume (~6 views/day)"
+    ]
+   }
+  },
+  {
+   "id": "t0|de",
+   "name": "de (німецька)",
+   "topic": "intermittent fasting",
+   "lang": "de",
+   "wiki": "de.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "Intermittierendes Fasten",
+     "ref": "Q1666254",
+     "redirects_added": 0,
+     "views_recent_month_avg": 1563.4166666666667,
+     "share_of_basket": 1.0,
+     "growth_rel": -0.3759670258663349
+    }
+   ],
+   "views_recent_month_avg": 1563.4166666666667,
+   "views_prev_month_avg": 2754.6666666666665,
+   "daily_avg_recent": 51.4,
+   "share_ppm_recent": 2.217760837768964,
+   "project_growth": -0.07328645292308378,
+   "spike_share": 0.0171758303259548,
+   "spike_days": 5,
+   "top_spikes": [
+    {
+     "date": "2025-01-26",
+     "views": 398,
+     "x_normal": 3.2
+    },
+    {
+     "date": "2025-01-25",
+     "views": 370,
+     "x_normal": 3.0
+    },
+    {
+     "date": "2025-01-27",
+     "views": 320,
+     "x_normal": 2.6
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.3759670258663349,
+   "growth_rel_lo": -0.4483826368980887,
+   "growth_rel_hi": -0.29894898804556397,
+   "growth_rel_with_spikes": -0.38756476075693225,
+   "growth_abs": -0.42170018904763384,
+   "growth_abs_lo": -0.5085006157546784,
+   "growth_abs_hi": -0.32762481018537815,
+   "trend_annual": -0.3278356851231493,
+   "trend_p": 4.2633047408591196e-05,
+   "months_up": 1,
+   "momentum_6m": -0.3563834588460193,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     2504.0,
+     2810.0,
+     2893.0,
+     2470.0,
+     4953.0,
+     3061.0,
+     3691.0,
+     2736.0,
+     2398.0,
+     1726.0,
+     1654.0,
+     2160.0,
+     1614.0,
+     1565.0,
+     1567.0,
+     1346.0,
+     2161.0,
+     1749.0,
+     1569.0,
+     1081.0,
+     1462.0,
+     1442.0,
+     1809.0,
+     1396.0
+    ],
+    "views_clean": [
+     2504.0,
+     2810.0,
+     2893.0,
+     2470.0,
+     4238.0,
+     3061.0,
+     3691.0,
+     2736.0,
+     2398.0,
+     1726.0,
+     1654.0,
+     2086.0,
+     1614.0,
+     1565.0,
+     1567.0,
+     1346.0,
+     2060.0,
+     1749.0,
+     1569.0,
+     1081.0,
+     1462.0,
+     1442.0,
+     1809.0,
+     1396.0
+    ],
+    "share_ppm": [
+     3.3542235779828413,
+     3.4941589413320147,
+     3.782035512508162,
+     3.040729692792666,
+     4.6974334770818915,
+     3.983262339457367,
+     4.580178323429386,
+     3.715955885117019,
+     3.367220400070296,
+     2.6828120179856465,
+     2.378664633436678,
+     2.831185554485648,
+     2.318595241578877,
+     2.090478045750808,
+     2.1351253263519308,
+     1.908693949349851,
+     2.640350462791529,
+     2.6019273423467824,
+     2.2627289285888676,
+     1.6299344429510867,
+     2.0813489010961126,
+     2.11129298538528,
+     2.607666574324422,
+     2.0308017816078556
+    ]
+   },
+   "seasonality": {
+    "strength": 0.607337669792117,
+    "peak": [
+     [
+      "Jan",
+      0.20191066147635617
+     ],
+     [
+      "Mar",
+      0.20060156908310667
+     ]
+    ],
+    "low": [
+     [
+      "Dec",
+      -0.19741175888969043
+     ],
+     [
+      "Sep",
+      -0.19004605656637275
+     ]
+    ],
+    "indices": [
+     0.1839125084559056,
+     0.12017696298729527,
+     0.18282273875054936,
+     -0.0463048077690246,
+     0.07031684651271011,
+     0.006505158779366162,
+     0.09466782462456177,
+     0.09865180836618484,
+     -0.2107778928907262,
+     -0.1892220727789767,
+     -0.0908356027848232,
+     -0.21991347225302235
+    ]
+   },
+   "forecast": {
+    "method": "ETS(A,Ad,A) on log",
+    "chosen": "ets",
+    "next12": 0.24294628924230977,
+    "next12_lo80": -0.22122543187973345,
+    "next12_hi80": 1.1671921088124178,
+    "skill": null,
+    "months": [
+     "2026-09",
+     "2026-10",
+     "2026-11",
+     "2026-12",
+     "2027-01",
+     "2027-02",
+     "2027-03",
+     "2027-04",
+     "2027-05",
+     "2027-06",
+     "2027-07",
+     "2027-08"
+    ],
+    "median": [
+     2.403807320951698,
+     2.6923425090193884,
+     2.9150837258793243,
+     2.3327585804222664,
+     3.570697407531016,
+     3.0422686874167444,
+     3.571365030551018,
+     2.9103703819547957,
+     2.6477706458480794,
+     2.116535256273311,
+     1.8586348000168182,
+     2.1944063946466312
+    ],
+    "lo80": [
+     2.046894241576378,
+     1.828363931049813,
+     1.833654126513103,
+     1.4265809738364268,
+     2.0922506948154527,
+     1.67553511505247,
+     1.8530007890920241,
+     1.473025669176952,
+     1.2752366794428966,
+     1.0110365440475089,
+     0.8497778946942535,
+     0.9427181649103862
+    ],
+    "hi80": [
+     3.5947674171920343,
+     4.090099421383777,
+     4.661872637180674,
+     3.998291673753103,
+     6.604441525874395,
+     5.844909553396624,
+     6.888716859665329,
+     5.756668698375238,
+     5.550241386662892,
+     4.532804879795524,
+     4.096962081308055,
+     5.02048708967573
+    ]
+   },
+   "changepoints": [],
+   "driven_by": null,
+   "top_article_share": 1.0,
+   "status": "ok",
+   "confidence": {
+    "grade": "high",
+    "direction": "down",
+    "good": [
+     "solid volume (~51 views/day)",
+     "95% interval excludes zero (-45% to -30%)",
+     "raw views move the same way (-42%)",
+     "11 of the last 12 months moved the same way year-over-year",
+     "spikes are only 2% of views"
+    ],
+    "bad": []
+   }
+  }
+ ],
+ "comparisons": [
+  {
+   "group": "topic: intermittent fasting",
+   "a": "cs (чеська)",
+   "b": "de (німецька)",
+   "diff": 0.03906514708902742,
+   "lo": -0.12818724795840009,
+   "hi": 0.27733816041993525,
+   "clear": false
+  }
+ ],
+ "ranking": {
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "groups": [
+   {
+    "group": "topic: intermittent fasting",
+    "rows": [
+     {
+      "name": "cs (чеська)",
+      "id": "t0|cs",
+      "score": 0.6,
+      "size_rank": 0.0,
+      "growth_rank": 1.0,
+      "intensity_rank": 1.0,
+      "confidence": "medium"
+     },
+     {
+      "name": "de (німецька)",
+      "id": "t0|de",
+      "score": 0.4,
+      "size_rank": 1.0,
+      "growth_rank": 0.0,
+      "intensity_rank": 0.0,
+      "confidence": "high"
+     }
+    ]
+   }
+  ]
+ },
+ "geo": {
+  "cs": [
+   {
+    "country": "CZ",
+    "share": 0.795
+   },
+   {
+    "country": "US",
+    "share": 0.0517
+   },
+   {
+    "country": "SK",
+    "share": 0.0493
+   },
+   {
+    "country": "DE",
+    "share": 0.0098
+   },
+   {
+    "country": "BR",
+    "share": 0.0078
+   },
+   {
+    "country": "PL",
+    "share": 0.007
+   },
+   {
+    "country": "GB",
+    "share": 0.0061
+   },
+   {
+    "country": "AT",
+    "share": 0.0053
+   }
+  ],
+  "de": [
+   {
+    "country": "DE",
+    "share": 0.7493
+   },
+   {
+    "country": "AT",
+    "share": 0.0786
+   },
+   {
+    "country": "CH",
+    "share": 0.0498
+   },
+   {
+    "country": "US",
+    "share": 0.0389
+   },
+   {
+    "country": "IT",
+    "share": 0.0071
+   },
+   {
+    "country": "FR",
+    "share": 0.0063
+   },
+   {
+    "country": "NL",
+    "share": 0.0056
+   },
+   {
+    "country": "GB",
+    "share": 0.005
+   }
+  ]
+ },
+ "pooling": [],
+ "project_totals": {
+  "cs": {
+   "growth": -0.1256716656099166,
+   "monthly": [
+    62292789.0,
+    70881496.0,
+    68852170.0,
+    70360761.0,
+    83396601.0,
+    69753016.0,
+    74797829.0,
+    67010206.0,
+    73630159.0,
+    56271438.0,
+    61159851.0,
+    57515129.0,
+    57306454.0,
+    66546281.0,
+    72883460.0,
+    59967317.0,
+    67410000.0,
+    58306397.0,
+    58040192.0,
+    54848117.0,
+    59792880.0,
+    53683305.0,
+    53131065.0,
+    51467770.0
+   ]
+  },
+  "de": {
+   "growth": -0.07328645292308378,
+   "monthly": [
+    746521495.0,
+    804199250.0,
+    764932003.0,
+    812305022.0,
+    902194788.0,
+    768465579.0,
+    805863820.0,
+    736284306.0,
+    712160095.0,
+    643354804.0,
+    695348128.0,
+    736793813.0,
+    696111150.0,
+    748632593.0,
+    733914764.0,
+    705194251.0,
+    780199458.0,
+    672194020.0,
+    693410501.0,
+    663216858.0,
+    702429083.0,
+    682993791.0,
+    693723660.0,
+    687413224.0
+   ]
+  }
+ },
+ "warnings": [
+  "The period spans 2025-04-15..2025-07-15, which includes Wikimedia's bot-detection update (May-June 2025): earlier 'human' views were probably partly automated, so the drop is at least partly a measurement artifact. Relative growth reduces this effect; series flagged with a level shift there deserve extra caution."
+ ],
+ "notes": [
+  {
+   "code": "known_event"
+  }
+ ],
+ "outdir": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs",
+ "files": {
+  "summary": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/summary.md",
+  "analysis": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/analysis.json",
+  "monthly data": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/data.csv",
+  "trend chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/trend.png",
+  "growth chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/growth.png",
+  "daily diagnostic chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/daily.png",
+  "narrative draft (edit, then run report)": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-6/eval-6-fasting-season-forecast-signals/with_skill/run-1/outputs/narrative.md"
+ }
+}

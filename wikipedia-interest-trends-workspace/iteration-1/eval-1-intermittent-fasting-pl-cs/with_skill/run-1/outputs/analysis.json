@@ -1,0 +1,424 @@
+{
+ "tool": "wikipedia-interest-trends",
+ "version": "1.0.0",
+ "generated_at": "2026-09-26T16:36:44",
+ "params": {
+  "topics": [
+   "intermittent fasting=Q1666254"
+  ],
+  "langs": [
+   "pl",
+   "cs"
+  ],
+  "agent": "user",
+  "access": "all-access",
+  "redirects": "auto",
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "report_lang": "uk"
+ },
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "months": [
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "topics": [
+  {
+   "key": "t0",
+   "label": "intermittent fasting",
+   "items": [
+    "Q1666254"
+   ],
+   "articles": {
+    "pl": [],
+    "cs": [
+     {
+      "ref": "Q1666254",
+      "title": "Přerušovaný půst",
+      "name": "Інтервальне голодування"
+     }
+    ]
+   },
+   "missing": {
+    "pl": [
+     "Інтервальне голодування (Q1666254)"
+    ],
+    "cs": []
+   }
+  }
+ ],
+ "series": [
+  {
+   "id": "t0|pl",
+   "name": "pl (польська)",
+   "topic": "intermittent fasting",
+   "lang": "pl",
+   "wiki": "pl.wikipedia",
+   "missing_items": [
+    "Інтервальне голодування (Q1666254)"
+   ],
+   "status": "no_article",
+   "confidence": {
+    "grade": "n/a",
+    "direction": "unclear",
+    "good": [],
+    "bad": [
+     "no article in pl.wikipedia"
+    ]
+   }
+  },
+  {
+   "id": "t0|cs",
+   "name": "cs (чеська)",
+   "topic": "intermittent fasting",
+   "lang": "cs",
+   "wiki": "cs.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "Přerušovaný půst",
+     "ref": "Q1666254",
+     "redirects_added": 0,
+     "views_recent_month_avg": 183.16666666666666,
+     "share_of_basket": 1.0,
+     "growth_rel": -0.3369018787773075
+    }
+   ],
+   "views_recent_month_avg": 183.16666666666666,
+   "views_prev_month_avg": 395.0833333333333,
+   "daily_avg_recent": 6.021917808219178,
+   "share_ppm_recent": 3.0810928585344755,
+   "project_growth": -0.1256716656099166,
+   "spike_share": 0.1651534803285776,
+   "spike_days": 11,
+   "top_spikes": [
+    {
+     "date": "2025-04-14",
+     "views": 508,
+     "x_normal": 36.3
+    },
+    {
+     "date": "2025-08-15",
+     "views": 164,
+     "x_normal": 27.3
+    },
+    {
+     "date": "2024-10-17",
+     "views": 110,
+     "x_normal": 7.9
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.3369018787773075,
+   "growth_rel_lo": -0.5135851290488478,
+   "growth_rel_hi": -0.08396426385080194,
+   "growth_rel_with_spikes": -0.4697469442491816,
+   "growth_abs": -0.42023452413416973,
+   "growth_abs_lo": -0.5900821646701601,
+   "growth_abs_hi": -0.1753497603435852,
+   "trend_annual": -0.407034851129947,
+   "trend_p": 0.0001207086399803714,
+   "months_up": 1,
+   "momentum_6m": -0.4270830414080625,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     393.0,
+     634.0,
+     329.0,
+     294.0,
+     489.0,
+     272.0,
+     366.0,
+     958.0,
+     225.0,
+     238.0,
+     157.0,
+     386.0,
+     270.0,
+     141.0,
+     151.0,
+     218.0,
+     474.0,
+     196.0,
+     179.0,
+     135.0,
+     109.0,
+     115.0,
+     91.0,
+     119.0
+    ],
+    "views_clean": [
+     393.0,
+     411.0,
+     273.0,
+     278.0,
+     489.0,
+     272.0,
+     366.0,
+     383.0,
+     225.0,
+     238.0,
+     157.0,
+     182.0,
+     198.0,
+     141.0,
+     151.0,
+     218.0,
+     474.0,
+     196.0,
+     179.0,
+     135.0,
+     109.0,
+     115.0,
+     91.0,
+     119.0
+    ],
+    "share_ppm": [
+     6.308916430118421,
+     5.7984103495784005,
+     3.9650166436293874,
+     3.951065850467422,
+     5.863548323750029,
+     3.8994729632909344,
+     4.89319014860712,
+     5.715547270515779,
+     3.0558130398713383,
+     4.229499164389579,
+     2.5670435331832313,
+     3.164384800388781,
+     3.455108215210803,
+     2.1188261444692906,
+     2.0718006527132493,
+     3.635313549212148,
+     7.031597685803294,
+     3.361552249575634,
+     3.0840697425673573,
+     2.4613424741636982,
+     1.8229595229398552,
+     2.1421929965004947,
+     1.71274564136819,
+     2.3121265988404005
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 1.0,
+   "status": "ok",
+   "confidence": {
+    "grade": "medium",
+    "direction": "down",
+    "good": [
+     "95% interval excludes zero (-51% to -8%)",
+     "raw views move the same way (-42%)",
+     "11 of the last 12 months moved the same way year-over-year",
+     "spikes are only 17% of views"
+    ],
+    "bad": [
+     "low volume (~6 views/day)"
+    ]
+   }
+  }
+ ],
+ "comparisons": [],
+ "ranking": {
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "groups": []
+ },
+ "geo": {
+  "pl": [
+   {
+    "country": "PL",
+    "share": 0.8659
+   },
+   {
+    "country": "US",
+    "share": 0.0356
+   },
+   {
+    "country": "DE",
+    "share": 0.0166
+   },
+   {
+    "country": "GB",
+    "share": 0.0117
+   },
+   {
+    "country": "NL",
+    "share": 0.0056
+   },
+   {
+    "country": "BR",
+    "share": 0.0048
+   },
+   {
+    "country": "IT",
+    "share": 0.0035
+   },
+   {
+    "country": "FR",
+    "share": 0.0033
+   }
+  ],
+  "cs": [
+   {
+    "country": "CZ",
+    "share": 0.795
+   },
+   {
+    "country": "US",
+    "share": 0.0517
+   },
+   {
+    "country": "SK",
+    "share": 0.0493
+   },
+   {
+    "country": "DE",
+    "share": 0.0098
+   },
+   {
+    "country": "BR",
+    "share": 0.0078
+   },
+   {
+    "country": "PL",
+    "share": 0.007
+   },
+   {
+    "country": "GB",
+    "share": 0.0061
+   },
+   {
+    "country": "AT",
+    "share": 0.0053
+   }
+  ]
+ },
+ "project_totals": {
+  "pl": {
+   "growth": -0.0879643325011259,
+   "monthly": [
+    192493223.0,
+    208701948.0,
+    218936097.0,
+    219776867.0,
+    252131702.0,
+    211020679.0,
+    223967317.0,
+    199339583.0,
+    194249620.0,
+    170783829.0,
+    186739175.0,
+    196910322.0,
+    189329148.0,
+    201290696.0,
+    228294569.0,
+    190164557.0,
+    204283824.0,
+    178016304.0,
+    178619982.0,
+    172465079.0,
+    179989593.0,
+    179578875.0,
+    179428492.0,
+    175873090.0
+   ]
+  },
+  "cs": {
+   "growth": -0.1256716656099166,
+   "monthly": [
+    62292789.0,
+    70881496.0,
+    68852170.0,
+    70360761.0,
+    83396601.0,
+    69753016.0,
+    74797829.0,
+    67010206.0,
+    73630159.0,
+    56271438.0,
+    61159851.0,
+    57515129.0,
+    57306454.0,
+    66546281.0,
+    72883460.0,
+    59967317.0,
+    67410000.0,
+    58306397.0,
+    58040192.0,
+    54848117.0,
+    59792880.0,
+    53683305.0,
+    53131065.0,
+    51467770.0
+   ]
+  }
+ },
+ "warnings": [
+  "'intermittent fasting' has no article in pl.wikipedia: interest cannot be measured there (also a sign of a content gap). Search in pl.wikipedia for \"intermittent fasting\" suggests: Stres oksydacyjny, Głodówka lecznicza, Paleolityczny styl życia, Skróty i skrótowce używane w medycynie. If one of them really covers the topic, add it as pl:<Title> and state that it is a proxy.",
+  "The period spans 2025-04-15..2025-07-15, which includes Wikimedia's bot-detection update (May-June 2025): earlier 'human' views were probably partly automated, so the drop is at least partly a measurement artifact. Relative growth reduces this effect; series flagged with a level shift there deserve extra caution."
+ ],
+ "notes": [
+  {
+   "code": "no_article",
+   "topic": "intermittent fasting",
+   "lang": "pl"
+  },
+  {
+   "code": "known_event"
+  }
+ ],
+ "outdir": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs",
+ "files": {
+  "summary": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/summary.md",
+  "analysis": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/analysis.json",
+  "monthly data": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/data.csv",
+  "trend chart": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/trend.png",
+  "growth chart": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/growth.png",
+  "daily diagnostic chart": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/daily.png",
+  "narrative draft (edit, then run report)": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/intermittent-fasting-pl-cs/with_skill/outputs/narrative.md"
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "36 months, 2023-09..2026-08"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "-33% [-44%, -21%], HIGH"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "7-article basket produced by expand (Астрономія, Чумацький Шлях, Галактика, Земля, Сонце, Місяць, Зоря)"
+  },
+  {
+   "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+   "passed": true,
+   "evidence": "'NOT growing - declining'"
+  },
+  {
+   "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+   "passed": true,
+   "evidence": "Interval, 12/12 months, year-over-year acceleration, confidence HIGH"
+  },
+  {
+   "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+   "passed": true,
+   "evidence": "Bot-detection update and seasonality (peak Feb, low Jul) mentioned. Did not run signals although it recommends checking Google Trends"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ }
+}

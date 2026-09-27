@@ -1,0 +1,185 @@
+{
+ "lang": "uk",
+ "seed": "Q333",
+ "source": "sub-topics of Q333 from the Wikidata and link graphs",
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31"
+ },
+ "measured": 60,
+ "min_views": 90,
+ "too_small": 46,
+ "growing": [],
+ "declining": [
+  {
+   "title": "Планета",
+   "qid": "Q634",
+   "views_month": 897.75,
+   "growth_rel": -0.5404179681207295,
+   "lo": -0.6436200154911089,
+   "hi": -0.40902840358573433,
+   "growth_abs": -0.6535757895779017,
+   "spike_share": 0.006719579295904952,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Галактика",
+   "qid": "Q318",
+   "views_month": 749.0,
+   "growth_rel": -0.4002664445851518,
+   "lo": -0.49988775372603433,
+   "hi": -0.278323422595395,
+   "growth_abs": -0.5479322319267599,
+   "spike_share": 0.014145888404658141,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Місяць (супутник)",
+   "qid": "Q405",
+   "views_month": 1958.0833333333333,
+   "growth_rel": -0.39609837361631883,
+   "lo": -0.5203795763086906,
+   "hi": -0.23633913051623368,
+   "growth_abs": -0.5447904191616766,
+   "spike_share": 0.009388969659089365,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Сонце",
+   "qid": "Q525",
+   "views_month": 2481.5833333333335,
+   "growth_rel": -0.38254245283590316,
+   "lo": -0.5017116895851773,
+   "hi": -0.24749326183748582,
+   "growth_abs": -0.5345722234378419,
+   "spike_share": 0.004131704726500265,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Зоря",
+   "qid": "Q523",
+   "views_month": 947.5833333333334,
+   "growth_rel": -0.37710973270436043,
+   "lo": -0.49999876264854753,
+   "hi": -0.23394257831691054,
+   "growth_abs": -0.5304771421433925,
+   "spike_share": 0.002656192602221029,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Земля",
+   "qid": "Q2",
+   "views_month": 3258.5,
+   "growth_rel": -0.2993343452949455,
+   "lo": -0.43643031318934566,
+   "hi": -0.14052401759289565,
+   "growth_abs": -0.4718515316872872,
+   "spike_share": 0.0011212642917052928,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Чумацький Шлях",
+   "qid": "Q321",
+   "views_month": 2302.0833333333335,
+   "growth_rel": -0.1793739082832766,
+   "lo": -0.2700037129804974,
+   "hi": -0.06359431371315512,
+   "growth_abs": -0.38142763172817384,
+   "spike_share": 0.008627516358938023,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": []
+  },
+  {
+   "title": "Астрономія",
+   "qid": "Q333",
+   "views_month": 559.0,
+   "growth_rel": -0.49031078574390174,
+   "lo": -0.6226837265509619,
+   "hi": -0.24264960088847629,
+   "growth_abs": -0.6158059467918622,
+   "spike_share": 0.013935340022296544,
+   "confidence": "medium",
+   "direction": "down",
+   "concerns": [
+    "low volume (~18 views/day)"
+   ]
+  },
+  {
+   "title": "Космологія",
+   "qid": "Q338",
+   "views_month": 181.33333333333334,
+   "growth_rel": -0.24933346732281647,
+   "lo": -0.3605597865545479,
+   "hi": -0.11275205315631182,
+   "growth_abs": -0.4341618191433104,
+   "spike_share": 0.006042296072507553,
+   "confidence": "medium",
+   "direction": "down",
+   "concerns": [
+    "low volume (~6 views/day)"
+   ]
+  },
+  {
+   "title": "Історія астрономії",
+   "qid": "Q50056",
+   "views_month": 104.0,
+   "growth_rel": -0.6579219154659331,
+   "lo": -0.7849494517225764,
+   "hi": -0.40773328356328015,
+   "growth_abs": -0.7421480342631233,
+   "spike_share": 0.022028688524590164,
+   "confidence": "low",
+   "direction": "down",
+   "concerns": [
+    "very low volume (~3 views/day), numbers are noisy"
+   ]
+  },
+  {
+   "title": "Небесна сфера",
+   "qid": "Q12134",
+   "views_month": 273.1666666666667,
+   "growth_rel": -0.5921651395845189,
+   "lo": -0.7171276441123084,
+   "hi": -0.3875840128910955,
+   "growth_abs": -0.6925818250023446,
+   "spike_share": 0.0,
+   "confidence": "low",
+   "direction": "down",
+   "concerns": [
+    "low volume (~9 views/day)",
+    "sudden persistent level change around 2025-08-19 (x3.2): check for a rename, merge, bot traffic or a real event; trend after it: -62%/yr"
+   ]
+  },
+  {
+   "title": "Астрономічний об'єкт",
+   "qid": "Q6999",
+   "views_month": 159.08333333333334,
+   "growth_rel": -0.577865395059858,
+   "lo": -0.683820850577339,
+   "hi": -0.44095287145809997,
+   "growth_abs": -0.6818029490616622,
+   "spike_share": 0.013294870186880723,
+   "confidence": "low",
+   "direction": "down",
+   "concerns": [
+    "low volume (~5 views/day)",
+    "sudden persistent level change around 2025-05-25 (x0.29): coincides with Wikimedia's bot-detection update (May-June 2025): earlier 'human' views were probably partly automated, so the drop is at least partly a measurement artifact; trend after it: -40%/yr"
+   ]
+  }
+ ],
+ "flat": 2,
+ "outdir": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends/wikitrends-output/discover_uk_Q333"
+}

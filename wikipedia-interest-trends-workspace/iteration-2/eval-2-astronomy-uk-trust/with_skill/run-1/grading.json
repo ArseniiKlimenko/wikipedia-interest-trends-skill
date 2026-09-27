@@ -1,0 +1,50 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'Період: 36 місяців (2023-09 до 2026-08)'"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "'-36% [-46%; -24%]', confidence ВИСОКА"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "7-article basket named: Астрономія, Галактика, Сонце, Планета, Чумацький Шлях, Зоря, Всесвіт"
+  },
+  {
+   "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+   "passed": true,
+   "evidence": "'не зростає - він спадає'"
+  },
+  {
+   "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+   "passed": true,
+   "evidence": "Volume ~288/day, 12 of 12 months down, interval excludes zero, raw agrees"
+  },
+  {
+   "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+   "passed": true,
+   "evidence": "Bot-detection update discussed. Minor: says relative growth 'частково нівелює' it (correct) but lists a third 'year' from the headline"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ }
+}

@@ -1,0 +1,1849 @@
+{
+ "tool": "wikipedia-interest-trends",
+ "version": "1.0.0",
+ "generated_at": "2026-09-26T16:46:03",
+ "params": {
+  "topics": [
+   "Learning English exams=Q490396|Q487425"
+  ],
+  "langs": [
+   "pl",
+   "tr",
+   "es",
+   "vi",
+   "de",
+   "pt",
+   "uk"
+  ],
+  "agent": "user",
+  "access": "all-access",
+  "redirects": "auto",
+  "weights": {
+   "size": 0.5,
+   "growth": 2.0,
+   "intensity": 0.5
+  },
+  "report_lang": "uk"
+ },
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "months": [
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "topics": [
+  {
+   "key": "t0",
+   "label": "Learning English exams",
+   "items": [
+    "Q490396",
+    "Q487425"
+   ],
+   "articles": {
+    "pl": [
+     {
+      "ref": "Q490396",
+      "title": "IELTS",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "TOEFL",
+      "name": "TOEFL"
+     }
+    ],
+    "tr": [
+     {
+      "ref": "Q490396",
+      "title": "IELTS",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "TOEFL",
+      "name": "TOEFL"
+     }
+    ],
+    "es": [
+     {
+      "ref": "Q490396",
+      "title": "IELTS",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "TOEFL",
+      "name": "TOEFL"
+     }
+    ],
+    "vi": [
+     {
+      "ref": "Q490396",
+      "title": "IELTS",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "TOEFL",
+      "name": "TOEFL"
+     }
+    ],
+    "de": [
+     {
+      "ref": "Q490396",
+      "title": "International English Language Testing System",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "TOEFL",
+      "name": "TOEFL"
+     }
+    ],
+    "pt": [
+     {
+      "ref": "Q490396",
+      "title": "Sistema de avaliação na língua inglesa internacional",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "Teste de Inglês como uma Língua Estrangeira",
+      "name": "TOEFL"
+     }
+    ],
+    "uk": [
+     {
+      "ref": "Q490396",
+      "title": "IELTS",
+      "name": "IELTS"
+     },
+     {
+      "ref": "Q487425",
+      "title": "TOEFL",
+      "name": "TOEFL"
+     }
+    ]
+   },
+   "missing": {
+    "pl": [],
+    "tr": [],
+    "es": [],
+    "vi": [],
+    "de": [],
+    "pt": [],
+    "uk": []
+   }
+  }
+ ],
+ "series": [
+  {
+   "id": "t0|pl",
+   "name": "pl (польська)",
+   "topic": "Learning English exams",
+   "lang": "pl",
+   "wiki": "pl.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "IELTS",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 286.6666666666667,
+     "share_of_basket": 0.6964972666531687,
+     "growth_rel": -0.15126410586159478
+    },
+    {
+     "title": "TOEFL",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 124.91666666666667,
+     "share_of_basket": 0.30350273334683137,
+     "growth_rel": -0.47049213075094687
+    }
+   ],
+   "views_recent_month_avg": 411.5833333333333,
+   "views_prev_month_avg": 621.75,
+   "daily_avg_recent": 13.531506849315068,
+   "share_ppm_recent": 2.1879790685438554,
+   "project_growth": -0.0879643325011259,
+   "spike_share": 0.00467741935483871,
+   "spike_days": 2,
+   "top_spikes": [
+    {
+     "date": "2024-12-04",
+     "views": 54,
+     "x_normal": 2.3
+    },
+    {
+     "date": "2025-03-10",
+     "views": 52,
+     "x_normal": 2.1
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.26849137030286485,
+   "growth_rel_lo": -0.36458539046743194,
+   "growth_rel_hi": -0.1524731405758151,
+   "growth_rel_with_spikes": -0.274177940537744,
+   "growth_abs": -0.33283803863298667,
+   "growth_abs_lo": -0.44041816718172994,
+   "growth_abs_hi": -0.19970063524434703,
+   "trend_annual": -0.2852327238504593,
+   "trend_p": 1.7774080855348373e-05,
+   "months_up": 1,
+   "momentum_6m": -0.25065116295389356,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     781.0,
+     714.0,
+     726.0,
+     628.0,
+     868.0,
+     704.0,
+     749.0,
+     468.0,
+     340.0,
+     512.0,
+     542.0,
+     429.0,
+     527.0,
+     559.0,
+     448.0,
+     394.0,
+     528.0,
+     433.0,
+     301.0,
+     368.0,
+     359.0,
+     330.0,
+     401.0,
+     291.0
+    ],
+    "views_clean": [
+     781.0,
+     714.0,
+     726.0,
+     597.0,
+     868.0,
+     704.0,
+     722.0,
+     468.0,
+     340.0,
+     512.0,
+     542.0,
+     429.0,
+     527.0,
+     559.0,
+     448.0,
+     394.0,
+     528.0,
+     433.0,
+     301.0,
+     368.0,
+     359.0,
+     330.0,
+     401.0,
+     291.0
+    ],
+    "share_ppm": [
+     4.057285694676119,
+     3.421146792554136,
+     3.3160360943129445,
+     2.71639143895886,
+     3.4426452251530035,
+     3.3361659309228173,
+     3.2236846414515026,
+     2.3477524782421164,
+     1.7503251743812933,
+     2.9979419187281486,
+     2.9024440104761093,
+     2.1786567389798894,
+     2.783512235527516,
+     2.777078181497271,
+     1.962376949930859,
+     2.071889768607091,
+     2.584639300662396,
+     2.4323614762836554,
+     1.6851418112896237,
+     2.133765294016419,
+     1.9945597632414223,
+     1.8376326280025979,
+     2.2348736007879952,
+     1.6546021907046722
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 0.6964972666531687,
+   "status": "ok",
+   "confidence": {
+    "grade": "medium",
+    "direction": "down",
+    "good": [
+     "95% interval excludes zero (-36% to -15%)",
+     "raw views move the same way (-33%)",
+     "11 of the last 12 months moved the same way year-over-year",
+     "spikes are only 0% of views"
+    ],
+    "bad": [
+     "low volume (~14 views/day)"
+    ]
+   }
+  },
+  {
+   "id": "t0|tr",
+   "name": "tr (турецька)",
+   "topic": "Learning English exams",
+   "lang": "tr",
+   "wiki": "tr.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "IELTS",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 1073.3333333333333,
+     "share_of_basket": 0.6151201107980324,
+     "growth_rel": 0.23199290711093723
+    },
+    {
+     "title": "TOEFL",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 671.5833333333334,
+     "share_of_basket": 0.38487988920196764,
+     "growth_rel": -0.1199745518933214
+    }
+   ],
+   "views_recent_month_avg": 1744.9166666666667,
+   "views_prev_month_avg": 1963.5,
+   "daily_avg_recent": 57.367123287671234,
+   "share_ppm_recent": 16.034359238832312,
+   "project_growth": -0.16322936567871782,
+   "spike_share": 0.005483022853419024,
+   "spike_days": 3,
+   "top_spikes": [
+    {
+     "date": "2025-02-08",
+     "views": 165,
+     "x_normal": 2.6
+    },
+    {
+     "date": "2026-05-17",
+     "views": 107,
+     "x_normal": 3.1
+    },
+    {
+     "date": "2025-02-09",
+     "views": 134,
+     "x_normal": 2.1
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": 0.06606573203646415,
+   "growth_rel_lo": -0.19945392630637274,
+   "growth_rel_hi": 0.425543825307444,
+   "growth_rel_with_spikes": 0.06203139348353148,
+   "growth_abs": -0.10794750117566587,
+   "growth_abs_lo": -0.33877610359022176,
+   "growth_abs_hi": 0.19382961872180554,
+   "trend_annual": -0.030300590851069287,
+   "trend_p": 0.9012978441563575,
+   "months_up": 6,
+   "momentum_6m": -0.45010001920942755,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     1459.0,
+     1088.0,
+     1372.0,
+     1789.0,
+     1904.0,
+     2053.0,
+     1648.0,
+     1482.0,
+     1593.0,
+     2845.0,
+     3376.0,
+     2953.0,
+     3073.0,
+     2987.0,
+     2458.0,
+     1995.0,
+     2027.0,
+     1971.0,
+     1235.0,
+     879.0,
+     1081.0,
+     1254.0,
+     1109.0,
+     870.0
+    ],
+    "views_clean": [
+     1459.0,
+     1088.0,
+     1372.0,
+     1789.0,
+     1904.0,
+     1882.0,
+     1648.0,
+     1482.0,
+     1593.0,
+     2845.0,
+     3376.0,
+     2953.0,
+     3073.0,
+     2987.0,
+     2458.0,
+     1995.0,
+     2027.0,
+     1971.0,
+     1235.0,
+     879.0,
+     1008.0,
+     1254.0,
+     1109.0,
+     870.0
+    ],
+    "share_ppm": [
+     12.720591424673545,
+     8.098832675347841,
+     10.413228558746855,
+     11.616398622543166,
+     12.740069087708477,
+     15.112162841985956,
+     11.691810432362653,
+     10.94943237388969,
+     12.015272474814184,
+     25.031125698905104,
+     28.345056734612523,
+     26.798438877044315,
+     27.57087088772902,
+     25.75509817727885,
+     18.37335322000901,
+     17.095757760979147,
+     16.64526883279343,
+     19.127919802717102,
+     11.480376518050884,
+     9.09578811718583,
+     9.381122595944245,
+     12.753992869358532,
+     11.149431711253888,
+     9.284927994102725
+    ]
+   },
+   "driven_by": "IELTS",
+   "top_article_share": 0.6151201107980324,
+   "status": "ok",
+   "confidence": {
+    "grade": "low",
+    "direction": "flat",
+    "good": [
+     "solid volume (~57 views/day)"
+    ],
+    "bad": [
+     "95% interval is wide (-20% to +43%)"
+    ]
+   }
+  },
+  {
+   "id": "t0|es",
+   "name": "es (іспанська)",
+   "topic": "Learning English exams",
+   "lang": "es",
+   "wiki": "es.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "IELTS",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 454.6666666666667,
+     "share_of_basket": 0.40292445166531277,
+     "growth_rel": -0.3604127354198928
+    },
+    {
+     "title": "TOEFL",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 673.75,
+     "share_of_basket": 0.5970755483346872,
+     "growth_rel": -0.4908074126896216
+    }
+   ],
+   "views_recent_month_avg": 1128.4166666666667,
+   "views_prev_month_avg": 2565.4166666666665,
+   "daily_avg_recent": 37.0986301369863,
+   "share_ppm_recent": 2.072604595618726,
+   "project_growth": -0.20854955889006888,
+   "spike_share": 0.0,
+   "spike_days": 0,
+   "top_spikes": [],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.4442392720975641,
+   "growth_rel_lo": -0.5363868870369612,
+   "growth_rel_hi": -0.3428673277449736,
+   "growth_rel_with_spikes": -0.4442392720975641,
+   "growth_abs": -0.5601429267500406,
+   "growth_abs_lo": -0.6513016112674859,
+   "growth_abs_hi": -0.4528520086559473,
+   "trend_annual": -0.46046052794136216,
+   "trend_p": 2.3915246449845995e-08,
+   "months_up": 0,
+   "momentum_6m": -0.384774286650288,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     3534.0,
+     3541.0,
+     3217.0,
+     2961.0,
+     4055.0,
+     2761.0,
+     2347.0,
+     1552.0,
+     1459.0,
+     1891.0,
+     1836.0,
+     1631.0,
+     1664.0,
+     1625.0,
+     1355.0,
+     1111.0,
+     1325.0,
+     1142.0,
+     996.0,
+     917.0,
+     929.0,
+     862.0,
+     712.0,
+     903.0
+    ],
+    "views_clean": [
+     3534.0,
+     3541.0,
+     3217.0,
+     2961.0,
+     4055.0,
+     2761.0,
+     2347.0,
+     1552.0,
+     1459.0,
+     1891.0,
+     1836.0,
+     1631.0,
+     1664.0,
+     1625.0,
+     1355.0,
+     1111.0,
+     1325.0,
+     1142.0,
+     996.0,
+     917.0,
+     929.0,
+     862.0,
+     712.0,
+     903.0
+    ],
+    "share_ppm": [
+     4.744606823280025,
+     4.377601890764017,
+     4.4195954039966585,
+     4.463955883198896,
+     5.305366410702384,
+     3.996954179046132,
+     3.1668913771977385,
+     2.3785282153836746,
+     2.2038082204819887,
+     3.183593514631784,
+     3.0259484772873493,
+     2.7253484301572795,
+     2.880082187576118,
+     2.678274218126916,
+     2.3041090015847288,
+     2.1838864253726133,
+     2.221646047402029,
+     2.0987882616566234,
+     1.908924447951891,
+     1.7848058323359473,
+     1.78706808322161,
+     1.6629409586972692,
+     1.3462447049449378,
+     1.7745145156731754
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 0.5970755483346872,
+   "status": "ok",
+   "confidence": {
+    "grade": "high",
+    "direction": "down",
+    "good": [
+     "solid volume (~37 views/day)",
+     "95% interval excludes zero (-54% to -34%)",
+     "raw views move the same way (-56%)",
+     "12 of the last 12 months moved the same way year-over-year",
+     "spikes are only 0% of views"
+    ],
+    "bad": []
+   }
+  },
+  {
+   "id": "t0|vi",
+   "name": "vi (вʼєтнамська)",
+   "topic": "Learning English exams",
+   "lang": "vi",
+   "wiki": "vi.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "IELTS",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 1508.5,
+     "share_of_basket": 0.853827649639168,
+     "growth_rel": -0.18987549934266923
+    },
+    {
+     "title": "TOEFL",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 258.25,
+     "share_of_basket": 0.14617235036083204,
+     "growth_rel": -0.45407212175648803
+    }
+   ],
+   "views_recent_month_avg": 1766.75,
+   "views_prev_month_avg": 3048.1666666666665,
+   "daily_avg_recent": 58.084931506849315,
+   "share_ppm_recent": 35.93845000114633,
+   "project_growth": -0.24231500053216137,
+   "spike_share": 0.007511379566970699,
+   "spike_days": 5,
+   "top_spikes": [
+    {
+     "date": "2025-05-12",
+     "views": 182,
+     "x_normal": 2.3
+    },
+    {
+     "date": "2026-06-02",
+     "views": 141,
+     "x_normal": 2.9
+    },
+    {
+     "date": "2026-07-09",
+     "views": 157,
+     "x_normal": 2.4
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.2448977875005367,
+   "growth_rel_lo": -0.3594877211434145,
+   "growth_rel_hi": -0.1293146822525336,
+   "growth_rel_with_spikes": -0.2350241916359158,
+   "growth_abs": -0.42787038052418036,
+   "growth_abs_lo": -0.5232168187695809,
+   "growth_abs_hi": -0.34127878317772475,
+   "trend_annual": -0.1929443112800744,
+   "trend_p": 0.021065443548514473,
+   "months_up": 2,
+   "momentum_6m": -0.32107244520705913,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     3415.0,
+     2922.0,
+     3101.0,
+     3481.0,
+     2412.0,
+     2926.0,
+     3422.0,
+     2911.0,
+     2499.0,
+     3195.0,
+     3387.0,
+     2907.0,
+     2874.0,
+     2291.0,
+     1900.0,
+     1509.0,
+     1627.0,
+     1114.0,
+     1674.0,
+     1236.0,
+     1144.0,
+     1869.0,
+     2356.0,
+     1607.0
+    ],
+    "views_clean": [
+     3415.0,
+     2922.0,
+     3101.0,
+     3481.0,
+     2412.0,
+     2926.0,
+     3422.0,
+     2911.0,
+     2397.0,
+     3195.0,
+     3387.0,
+     2907.0,
+     2874.0,
+     2291.0,
+     1900.0,
+     1509.0,
+     1627.0,
+     1114.0,
+     1674.0,
+     1236.0,
+     1144.0,
+     1708.0,
+     2185.0,
+     1607.0
+    ],
+    "share_ppm": [
+     51.14275145996082,
+     38.76144527182399,
+     46.21604527199201,
+     49.00774934860592,
+     35.856313583263535,
+     44.47573925944337,
+     47.788297006360644,
+     42.87230543473409,
+     36.016229390775784,
+     62.173904438884016,
+     62.77830999195485,
+     53.98693315646964,
+     53.13838264697888,
+     41.776079665944536,
+     28.022571739074166,
+     32.21070041602393,
+     31.16902960925627,
+     28.501379067625226,
+     39.889981809787024,
+     28.526277790877966,
+     25.575098224361618,
+     37.017845007019844,
+     43.32707176176638,
+     33.154835018900116
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 0.853827649639168,
+   "status": "ok",
+   "confidence": {
+    "grade": "high",
+    "direction": "down",
+    "good": [
+     "solid volume (~58 views/day)",
+     "95% interval excludes zero (-36% to -13%)",
+     "raw views move the same way (-43%)",
+     "10 of the last 12 months moved the same way year-over-year",
+     "spikes are only 1% of views"
+    ],
+    "bad": []
+   }
+  },
+  {
+   "id": "t0|de",
+   "name": "de (німецька)",
+   "topic": "Learning English exams",
+   "lang": "de",
+   "wiki": "de.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "International English Language Testing System",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 303.1666666666667,
+     "share_of_basket": 0.3384186046511628,
+     "growth_rel": -0.3743903302115218
+    },
+    {
+     "title": "TOEFL",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 592.6666666666666,
+     "share_of_basket": 0.6615813953488372,
+     "growth_rel": -0.3972801467423209
+    }
+   ],
+   "views_recent_month_avg": 895.8333333333334,
+   "views_prev_month_avg": 1589.0,
+   "daily_avg_recent": 29.45205479452055,
+   "share_ppm_recent": 1.2707706948465631,
+   "project_growth": -0.07328645292308378,
+   "spike_share": 0.0026829431886779796,
+   "spike_days": 1,
+   "top_spikes": [
+    {
+     "date": "2025-06-02",
+     "views": 118,
+     "x_normal": 3.1
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.3890808632055651,
+   "growth_rel_lo": -0.4577063922898292,
+   "growth_rel_hi": -0.319520969521214,
+   "growth_rel_with_spikes": -0.39164398104401466,
+   "growth_abs": -0.43385295976406146,
+   "growth_abs_lo": -0.5154730209359288,
+   "growth_abs_hi": -0.34688548153682197,
+   "trend_annual": -0.3673924611656061,
+   "trend_p": 2.3915246449845995e-08,
+   "months_up": 0,
+   "momentum_6m": -0.38358186504274994,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     1744.0,
+     1821.0,
+     1678.0,
+     1566.0,
+     2213.0,
+     2009.0,
+     1909.0,
+     1429.0,
+     1264.0,
+     1229.0,
+     1100.0,
+     1106.0,
+     1122.0,
+     1139.0,
+     1092.0,
+     742.0,
+     1127.0,
+     889.0,
+     856.0,
+     825.0,
+     865.0,
+     702.0,
+     697.0,
+     694.0
+    ],
+    "views_clean": [
+     1744.0,
+     1821.0,
+     1678.0,
+     1566.0,
+     2213.0,
+     2009.0,
+     1909.0,
+     1429.0,
+     1264.0,
+     1149.0,
+     1100.0,
+     1106.0,
+     1122.0,
+     1139.0,
+     1092.0,
+     742.0,
+     1127.0,
+     889.0,
+     856.0,
+     825.0,
+     865.0,
+     702.0,
+     697.0,
+     694.0
+    ],
+    "share_ppm": [
+     2.336168498403385,
+     2.2643642107350885,
+     2.1936590355992727,
+     1.9278472465236096,
+     2.4529070988160044,
+     2.614300568431836,
+     2.368886594263532,
+     1.9408263742076826,
+     1.7748818122138674,
+     1.7859507582071308,
+     1.5819414128055294,
+     1.501098381237357,
+     1.611811561989777,
+     1.5214405713164028,
+     1.4879112038138533,
+     1.0521923554365449,
+     1.4445024133815791,
+     1.322534824097364,
+     1.2344779878088405,
+     1.243937017053327,
+     1.2314410392942114,
+     1.0278277917756355,
+     1.0047228315666787,
+     1.0095819745242491
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 0.6615813953488372,
+   "status": "ok",
+   "confidence": {
+    "grade": "high",
+    "direction": "down",
+    "good": [
+     "solid volume (~29 views/day)",
+     "95% interval excludes zero (-46% to -32%)",
+     "raw views move the same way (-43%)",
+     "12 of the last 12 months moved the same way year-over-year",
+     "spikes are only 0% of views"
+    ],
+    "bad": []
+   }
+  },
+  {
+   "id": "t0|pt",
+   "name": "pt (португальська)",
+   "topic": "Learning English exams",
+   "lang": "pt",
+   "wiki": "pt.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "Sistema de avaliação na língua inglesa internacional",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 81.5,
+     "share_of_basket": 0.3818820773135494,
+     "growth_rel": -0.42245448470605707
+    },
+    {
+     "title": "Teste de Inglês como uma Língua Estrangeira",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 131.91666666666666,
+     "share_of_basket": 0.6181179226864506,
+     "growth_rel": -0.6041268232423092
+    }
+   ],
+   "views_recent_month_avg": 213.41666666666666,
+   "views_prev_month_avg": 558.1666666666666,
+   "daily_avg_recent": 7.016438356164383,
+   "share_ppm_recent": 1.1899422298705755,
+   "project_growth": -0.1658824150161834,
+   "spike_share": 0.0059401663246570905,
+   "spike_days": 2,
+   "top_spikes": [
+    {
+     "date": "2026-05-29",
+     "views": 43,
+     "x_normal": 8.6
+    },
+    {
+     "date": "2025-10-02",
+     "views": 26,
+     "x_normal": 2.9
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.5514522873969112,
+   "growth_rel_lo": -0.6412978873868266,
+   "growth_rel_hi": -0.4468032650443848,
+   "growth_rel_with_spikes": -0.5416078643349919,
+   "growth_abs": -0.6258584652134965,
+   "growth_abs_lo": -0.710210209740501,
+   "growth_abs_hi": -0.5220180777774861,
+   "trend_annual": -0.5549672333239369,
+   "trend_p": 2.1703689978558316e-07,
+   "months_up": 0,
+   "momentum_6m": -0.5136770106996552,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     634.0,
+     740.0,
+     740.0,
+     729.0,
+     954.0,
+     669.0,
+     514.0,
+     306.0,
+     314.0,
+     334.0,
+     429.0,
+     335.0,
+     295.0,
+     265.0,
+     276.0,
+     202.0,
+     301.0,
+     238.0,
+     187.0,
+     159.0,
+     223.0,
+     145.0,
+     144.0,
+     126.0
+    ],
+    "views_clean": [
+     634.0,
+     740.0,
+     740.0,
+     729.0,
+     954.0,
+     669.0,
+     514.0,
+     306.0,
+     314.0,
+     334.0,
+     429.0,
+     335.0,
+     295.0,
+     248.0,
+     276.0,
+     202.0,
+     301.0,
+     238.0,
+     187.0,
+     159.0,
+     185.0,
+     145.0,
+     144.0,
+     126.0
+    ],
+    "share_ppm": [
+     2.8350321615170584,
+     3.165234961743067,
+     3.248261011643238,
+     3.210953019709495,
+     3.793649757974689,
+     3.138459502306094,
+     2.150240481807815,
+     1.4759549003747805,
+     1.6089026960295372,
+     1.813423580294297,
+     2.2158275882838008,
+     1.8207156218943892,
+     1.654091200017261,
+     1.323669853104724,
+     1.3641606960540984,
+     1.229400511932111,
+     1.6189507032953134,
+     1.377276939698973,
+     1.1040173633238606,
+     0.9772975800507674,
+     1.0521663268624422,
+     0.8327910523459029,
+     0.7099706598215371,
+     0.714678901122427
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 0.6181179226864506,
+   "status": "ok",
+   "confidence": {
+    "grade": "medium",
+    "direction": "down",
+    "good": [
+     "95% interval excludes zero (-64% to -45%)",
+     "raw views move the same way (-63%)",
+     "12 of the last 12 months moved the same way year-over-year",
+     "spikes are only 1% of views"
+    ],
+    "bad": [
+     "low volume (~7 views/day)"
+    ]
+   }
+  },
+  {
+   "id": "t0|uk",
+   "name": "uk (українська)",
+   "topic": "Learning English exams",
+   "lang": "uk",
+   "wiki": "uk.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "IELTS",
+     "ref": "Q490396",
+     "redirects_added": 0,
+     "views_recent_month_avg": 254.0,
+     "share_of_basket": 0.6718095657923738,
+     "growth_rel": -0.4229608740523365
+    },
+    {
+     "title": "TOEFL",
+     "ref": "Q487425",
+     "redirects_added": 0,
+     "views_recent_month_avg": 124.08333333333333,
+     "share_of_basket": 0.32819043420762617,
+     "growth_rel": -0.5546945961688535
+    }
+   ],
+   "views_recent_month_avg": 378.0833333333333,
+   "views_prev_month_avg": 947.5,
+   "daily_avg_recent": 12.43013698630137,
+   "share_ppm_recent": 6.686206324814588,
+   "project_growth": -0.2462189850949137,
+   "spike_share": 0.011127176714653925,
+   "spike_days": 3,
+   "top_spikes": [
+    {
+     "date": "2026-06-26",
+     "views": 88,
+     "x_normal": 11.0
+    },
+    {
+     "date": "2025-06-05",
+     "views": 70,
+     "x_normal": 3.5
+    },
+    {
+     "date": "2025-06-06",
+     "views": 67,
+     "x_normal": 3.4
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.475484976339553,
+   "growth_rel_lo": -0.5460731438064859,
+   "growth_rel_hi": -0.39959570088896484,
+   "growth_rel_with_spikes": -0.47062537542571303,
+   "growth_abs": -0.604630533132263,
+   "growth_abs_lo": -0.6830378437292263,
+   "growth_abs_hi": -0.5198903505531484,
+   "trend_annual": -0.46087367381280275,
+   "trend_p": 3.5107706906067904e-06,
+   "months_up": 0,
+   "momentum_6m": -0.5325371403361371,
+   "yearly": [],
+   "monthly": {
+    "views": [
+     1092.0,
+     923.0,
+     973.0,
+     951.0,
+     1382.0,
+     1252.0,
+     1273.0,
+     929.0,
+     791.0,
+     824.0,
+     517.0,
+     463.0,
+     541.0,
+     441.0,
+     494.0,
+     410.0,
+     451.0,
+     399.0,
+     362.0,
+     362.0,
+     252.0,
+     345.0,
+     252.0,
+     228.0
+    ],
+    "views_clean": [
+     1092.0,
+     923.0,
+     973.0,
+     951.0,
+     1382.0,
+     1252.0,
+     1273.0,
+     929.0,
+     791.0,
+     727.0,
+     517.0,
+     463.0,
+     541.0,
+     441.0,
+     494.0,
+     410.0,
+     451.0,
+     399.0,
+     362.0,
+     362.0,
+     252.0,
+     265.0,
+     252.0,
+     228.0
+    ],
+    "share_ppm": [
+     14.655891544255189,
+     11.118571140978856,
+     11.606122784429331,
+     11.263572026901105,
+     14.684660880336494,
+     15.277274975379427,
+     16.011547432416933,
+     12.876510054946522,
+     11.457076021233568,
+     13.550116307339453,
+     8.310630737007632,
+     7.4916891197551685,
+     8.831686117761539,
+     6.677299673363458,
+     7.35801361038886,
+     7.387739336627136,
+     7.458000049477464,
+     7.730408606537082,
+     6.568108032531222,
+     6.773693772681349,
+     4.504016859178535,
+     5.485178757214976,
+     4.754802477863422,
+     4.495225331351833
+    ]
+   },
+   "driven_by": null,
+   "top_article_share": 0.6718095657923738,
+   "status": "ok",
+   "confidence": {
+    "grade": "medium",
+    "direction": "down",
+    "good": [
+     "95% interval excludes zero (-55% to -40%)",
+     "raw views move the same way (-60%)",
+     "12 of the last 12 months moved the same way year-over-year",
+     "spikes are only 1% of views"
+    ],
+    "bad": [
+     "low volume (~12 views/day)"
+    ]
+   }
+  }
+ ],
+ "comparisons": [
+  {
+   "group": "topic: Learning English exams",
+   "a": "tr (турецька)",
+   "b": "vi (вʼєтнамська)",
+   "diff": 0.31096351953700085,
+   "lo": 0.09662982118186839,
+   "hi": 0.6221271832367627,
+   "clear": true
+  },
+  {
+   "group": "topic: Learning English exams",
+   "a": "tr (турецька)",
+   "b": "pl (польська)",
+   "diff": 0.334557102339329,
+   "lo": 0.06369390131780608,
+   "hi": 0.6904341184203414,
+   "clear": true
+  },
+  {
+   "group": "topic: Learning English exams",
+   "a": "tr (турецька)",
+   "b": "de (німецька)",
+   "diff": 0.4551465952420293,
+   "lo": 0.18269205032554175,
+   "hi": 0.8229725317668317,
+   "clear": true
+  },
+  {
+   "group": "topic: Learning English exams",
+   "a": "tr (турецька)",
+   "b": "es (іспанська)",
+   "diff": 0.5103050041340282,
+   "lo": 0.24445210643158652,
+   "hi": 0.8690602744741786,
+   "clear": true
+  },
+  {
+   "group": "topic: Learning English exams",
+   "a": "tr (турецька)",
+   "b": "uk (українська)",
+   "diff": 0.5415507083760172,
+   "lo": 0.2687518529441394,
+   "hi": 0.9052273931826704,
+   "clear": true
+  },
+  {
+   "group": "topic: Learning English exams",
+   "a": "tr (турецька)",
+   "b": "pt (португальська)",
+   "diff": 0.6175180194333754,
+   "lo": 0.34198251713820066,
+   "hi": 0.9784014231934063,
+   "clear": true
+  }
+ ],
+ "ranking": {
+  "weights": {
+   "size": 0.5,
+   "growth": 2.0,
+   "intensity": 0.5
+  },
+  "groups": [
+   {
+    "group": "topic: Learning English exams",
+    "rows": [
+     {
+      "name": "tr (турецька)",
+      "id": "t0|tr",
+      "score": 0.944,
+      "size_rank": 0.8333333333333334,
+      "growth_rank": 1.0,
+      "intensity_rank": 0.8333333333333334,
+      "confidence": "low"
+     },
+     {
+      "name": "vi (вʼєтнамська)",
+      "id": "t0|vi",
+      "score": 0.889,
+      "size_rank": 1.0,
+      "growth_rank": 0.8333333333333334,
+      "intensity_rank": 1.0,
+      "confidence": "high"
+     },
+     {
+      "name": "pl (польська)",
+      "id": "t0|pl",
+      "score": 0.583,
+      "size_rank": 0.3333333333333333,
+      "growth_rank": 0.6666666666666666,
+      "intensity_rank": 0.5,
+      "confidence": "medium"
+     },
+     {
+      "name": "de (німецька)",
+      "id": "t0|de",
+      "score": 0.444,
+      "size_rank": 0.5,
+      "growth_rank": 0.5,
+      "intensity_rank": 0.16666666666666666,
+      "confidence": "high"
+     },
+     {
+      "name": "es (іспанська)",
+      "id": "t0|es",
+      "score": 0.389,
+      "size_rank": 0.6666666666666666,
+      "growth_rank": 0.3333333333333333,
+      "intensity_rank": 0.3333333333333333,
+      "confidence": "high"
+     },
+     {
+      "name": "uk (українська)",
+      "id": "t0|uk",
+      "score": 0.25,
+      "size_rank": 0.16666666666666666,
+      "growth_rank": 0.16666666666666666,
+      "intensity_rank": 0.6666666666666666,
+      "confidence": "medium"
+     },
+     {
+      "name": "pt (португальська)",
+      "id": "t0|pt",
+      "score": 0.0,
+      "size_rank": 0.0,
+      "growth_rank": 0.0,
+      "intensity_rank": 0.0,
+      "confidence": "medium"
+     }
+    ]
+   }
+  ]
+ },
+ "geo": {
+  "pl": [
+   {
+    "country": "PL",
+    "share": 0.8659
+   },
+   {
+    "country": "US",
+    "share": 0.0356
+   },
+   {
+    "country": "DE",
+    "share": 0.0166
+   },
+   {
+    "country": "GB",
+    "share": 0.0117
+   },
+   {
+    "country": "NL",
+    "share": 0.0056
+   },
+   {
+    "country": "BR",
+    "share": 0.0048
+   },
+   {
+    "country": "IT",
+    "share": 0.0035
+   },
+   {
+    "country": "FR",
+    "share": 0.0033
+   }
+  ],
+  "tr": [
+   {
+    "country": "US",
+    "share": 0.31
+   },
+   {
+    "country": "DE",
+    "share": 0.149
+   },
+   {
+    "country": "NL",
+    "share": 0.0454
+   },
+   {
+    "country": "GB",
+    "share": 0.0422
+   },
+   {
+    "country": "BR",
+    "share": 0.038
+   },
+   {
+    "country": "FR",
+    "share": 0.0343
+   },
+   {
+    "country": "IN",
+    "share": 0.0198
+   },
+   {
+    "country": "AT",
+    "share": 0.0165
+   }
+  ],
+  "es": [
+   {
+    "country": "ES",
+    "share": 0.3194
+   },
+   {
+    "country": "MX",
+    "share": 0.1684
+   },
+   {
+    "country": "AR",
+    "share": 0.1294
+   },
+   {
+    "country": "CL",
+    "share": 0.0648
+   },
+   {
+    "country": "CO",
+    "share": 0.0642
+   },
+   {
+    "country": "US",
+    "share": 0.0595
+   },
+   {
+    "country": "PE",
+    "share": 0.042
+   },
+   {
+    "country": "EC",
+    "share": 0.0146
+   }
+  ],
+  "vi": [
+   {
+    "country": "US",
+    "share": 0.4744
+   },
+   {
+    "country": "SG",
+    "share": 0.0533
+   },
+   {
+    "country": "JP",
+    "share": 0.0458
+   },
+   {
+    "country": "BR",
+    "share": 0.041
+   },
+   {
+    "country": "GB",
+    "share": 0.0283
+   },
+   {
+    "country": "IN",
+    "share": 0.0275
+   },
+   {
+    "country": "CA",
+    "share": 0.0268
+   },
+   {
+    "country": "DE",
+    "share": 0.0251
+   }
+  ],
+  "de": [
+   {
+    "country": "DE",
+    "share": 0.7493
+   },
+   {
+    "country": "AT",
+    "share": 0.0786
+   },
+   {
+    "country": "CH",
+    "share": 0.0498
+   },
+   {
+    "country": "US",
+    "share": 0.0389
+   },
+   {
+    "country": "IT",
+    "share": 0.0071
+   },
+   {
+    "country": "FR",
+    "share": 0.0063
+   },
+   {
+    "country": "NL",
+    "share": 0.0056
+   },
+   {
+    "country": "GB",
+    "share": 0.005
+   }
+  ],
+  "pt": [
+   {
+    "country": "BR",
+    "share": 0.7365
+   },
+   {
+    "country": "PT",
+    "share": 0.0938
+   },
+   {
+    "country": "US",
+    "share": 0.0878
+   },
+   {
+    "country": "AO",
+    "share": 0.005
+   },
+   {
+    "country": "GB",
+    "share": 0.0049
+   },
+   {
+    "country": "FR",
+    "share": 0.0045
+   },
+   {
+    "country": "IN",
+    "share": 0.0042
+   },
+   {
+    "country": "ES",
+    "share": 0.0042
+   }
+  ],
+  "uk": [
+   {
+    "country": "UA",
+    "share": 0.6491
+   },
+   {
+    "country": "US",
+    "share": 0.1122
+   },
+   {
+    "country": "PL",
+    "share": 0.0385
+   },
+   {
+    "country": "GB",
+    "share": 0.0268
+   },
+   {
+    "country": "DE",
+    "share": 0.0267
+   },
+   {
+    "country": "BR",
+    "share": 0.0108
+   },
+   {
+    "country": "NL",
+    "share": 0.0092
+   },
+   {
+    "country": "CZ",
+    "share": 0.0087
+   }
+  ]
+ },
+ "project_totals": {
+  "pl": {
+   "growth": -0.0879643325011259,
+   "monthly": [
+    192493223.0,
+    208701948.0,
+    218936097.0,
+    219776867.0,
+    252131702.0,
+    211020679.0,
+    223967317.0,
+    199339583.0,
+    194249620.0,
+    170783829.0,
+    186739175.0,
+    196910322.0,
+    189329148.0,
+    201290696.0,
+    228294569.0,
+    190164557.0,
+    204283824.0,
+    178016304.0,
+    178619982.0,
+    172465079.0,
+    179989593.0,
+    179578875.0,
+    179428492.0,
+    175873090.0
+   ]
+  },
+  "tr": {
+   "growth": -0.16322936567871782,
+   "monthly": [
+    114695925.0,
+    134340348.0,
+    131755487.0,
+    154006423.0,
+    149449739.0,
+    124535450.0,
+    140953363.0,
+    135349482.0,
+    132581263.0,
+    113658492.0,
+    119103660.0,
+    110192986.0,
+    111458213.0,
+    115977038.0,
+    133780697.0,
+    116695617.0,
+    121776345.0,
+    103043092.0,
+    107574869.0,
+    96638135.0,
+    107449827.0,
+    98322150.0,
+    99466953.0,
+    93700242.0
+   ]
+  },
+  "es": {
+   "growth": -0.20854955889006888,
+   "monthly": [
+    744845702.0,
+    808890367.0,
+    727894684.0,
+    663313007.0,
+    764320442.0,
+    690775995.0,
+    741105305.0,
+    652504347.0,
+    662035828.0,
+    593982866.0,
+    606751904.0,
+    598455589.0,
+    577761290.0,
+    606733989.0,
+    588079817.0,
+    508726089.0,
+    596404635.0,
+    544123493.0,
+    521759780.0,
+    513781378.0,
+    519845891.0,
+    518358752.0,
+    528878589.0,
+    508871577.0
+   ]
+  },
+  "vi": {
+   "growth": -0.24231500053216137,
+   "monthly": [
+    66773881.0,
+    75384186.0,
+    67097909.0,
+    71029583.0,
+    67268488.0,
+    65788676.0,
+    71607490.0,
+    67899311.0,
+    66553330.0,
+    51388119.0,
+    53951755.0,
+    53846363.0,
+    54085199.0,
+    54839995.0,
+    67802485.0,
+    46847786.0,
+    52199251.0,
+    39085828.0,
+    41965424.0,
+    43328471.0,
+    44731011.0,
+    46139909.0,
+    50430364.0,
+    48469552.0
+   ]
+  },
+  "de": {
+   "growth": -0.07328645292308378,
+   "monthly": [
+    746521495.0,
+    804199250.0,
+    764932003.0,
+    812305022.0,
+    902194788.0,
+    768465579.0,
+    805863820.0,
+    736284306.0,
+    712160095.0,
+    643354804.0,
+    695348128.0,
+    736793813.0,
+    696111150.0,
+    748632593.0,
+    733914764.0,
+    705194251.0,
+    780199458.0,
+    672194020.0,
+    693410501.0,
+    663216858.0,
+    702429083.0,
+    682993791.0,
+    693723660.0,
+    687413224.0
+   ]
+  },
+  "pt": {
+   "growth": -0.1658824150161834,
+   "monthly": [
+    223630620.0,
+    233789911.0,
+    227814205.0,
+    227035399.0,
+    251472872.0,
+    213161903.0,
+    239043030.0,
+    207323408.0,
+    195164071.0,
+    184182010.0,
+    193607121.0,
+    183993588.0,
+    178345668.0,
+    187357897.0,
+    202322205.0,
+    164307724.0,
+    185922894.0,
+    172804752.0,
+    169381394.0,
+    162693537.0,
+    175827714.0,
+    174113302.0,
+    202825283.0,
+    176302952.0
+   ]
+  },
+  "uk": {
+   "growth": -0.2462189850949137,
+   "monthly": [
+    74509285.0,
+    83014264.0,
+    83835060.0,
+    84431475.0,
+    94111809.0,
+    81951788.0,
+    79505120.0,
+    72146878.0,
+    69040303.0,
+    53652676.0,
+    62209478.0,
+    61801817.0,
+    61256706.0,
+    66044662.0,
+    67137685.0,
+    55497356.0,
+    60471976.0,
+    51614348.0,
+    55114806.0,
+    53442038.0,
+    55950057.0,
+    48312008.0,
+    52999047.0,
+    50720483.0
+   ]
+  }
+ },
+ "warnings": [
+  "The period spans 2025-04-15..2025-07-15, which includes Wikimedia's bot-detection update (May-June 2025): earlier 'human' views were probably partly automated, so the drop is at least partly a measurement artifact. Relative growth reduces this effect; series flagged with a level shift there deserve extra caution."
+ ],
+ "notes": [
+  {
+   "code": "known_event"
+  }
+ ],
+ "outdir": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs",
+ "files": {
+  "summary": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/summary.md",
+  "analysis": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/analysis.json",
+  "monthly data": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/data.csv",
+  "trend chart": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/trend.png",
+  "growth chart": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/growth.png",
+  "daily diagnostic chart": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/daily.png",
+  "narrative draft (edit, then run report)": "/Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-2/eval-4-followup-add-languages/with_skill/run-1/outputs/narrative.md"
+ }
+}

@@ -1,0 +1,8 @@
+# Pinned runtime dependencies (Python >= 3.9). Installed automatically by scripts/wt.
+# The HTTP client, cache and statistics use only the standard library + numpy.
+numpy==2.0.2 ; python_version < "3.10"
+numpy==2.2.6 ; python_version == "3.10"
+numpy==2.4.6 ; python_version >= "3.11"
+matplotlib==3.9.4 ; python_version < "3.10"
+matplotlib==3.10.9 ; python_version >= "3.10"
+reportlab==4.4.10

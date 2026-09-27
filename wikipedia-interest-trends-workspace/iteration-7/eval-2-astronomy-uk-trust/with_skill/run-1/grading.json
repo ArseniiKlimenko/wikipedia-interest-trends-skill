@@ -1,0 +1,50 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "last 12 vs previous 12 months"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "-33% [-44%; -21%], high confidence"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "7-article expand basket named"
+  },
+  {
+   "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+   "passed": true,
+   "evidence": "'СПАДАЄ, не зростає'"
+  },
+  {
+   "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+   "passed": true,
+   "evidence": "Interval, 12 months in a row, volume"
+  },
+  {
+   "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+   "passed": true,
+   "evidence": "Bot-detection caveat and seasonality; now also runs signals: Google Trends UA -8% [-28%; +18%] (no clear change), App Store UA context, and the PDF carries both"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "States the seasonal peak month(s) for each of the two languages/countries from the tool output",
+   "passed": true,
+   "evidence": "cs: Jan +81%, Apr +17%; de: Jan +20%, Mar +20%"
+  },
+  {
+   "text": "Gives a 12-month forecast as a range (80% interval), not a single number, with a caveat that it is a scenario",
+   "passed": true,
+   "evidence": "cs +5% [80%: -44%, +155%], de +24% [-22%, +117%], 'не обіцянка, а екстраполяція'"
+  },
+  {
+   "text": "Reports the Google Trends result for CZ and DE and whether it agrees with Wikipedia (or clearly states it was unavailable)",
+   "passed": true,
+   "evidence": "CZ -22% [-38%, +1%] roughly agrees; DE +58% [+27%, +101%] DISAGREES, explained as a channel shift"
+  },
+  {
+   "text": "Includes App Store competition context for at least one country",
+   "passed": true,
+   "evidence": "Yazio 443,539 ratings, Fastic 131,139 in DE (calls it 'confirmation of real demand', a slight overreach)"
+  },
+  {
+   "text": "The PDF includes the Second signals section (signals were run before report)",
+   "passed": true,
+   "evidence": "signals.json was written before report.pdf, so the PDF carries the second-signal block"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 0,
+  "total": 7,
+  "pass_rate": 1.0
+ }
+}

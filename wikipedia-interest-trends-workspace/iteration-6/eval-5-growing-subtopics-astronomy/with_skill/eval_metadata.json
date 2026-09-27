@@ -1,0 +1,13 @@
+{
+ "eval_id": 5,
+ "eval_name": "growing-subtopics-astronomy",
+ "prompt": "У нас освітній застосунок з астрономії для українських школярів. Які підтеми астрономії зараз набирають інтерес в україномовній Вікіпедії, і з чого варто почати новий модуль?",
+ "assertions": [
+  "response.md is written in Ukrainian",
+  "Sub-topics were found with the skill's automatic tools (expand or discover output exists), not only a hand-picked list",
+  "Lists at least 3 sub-topics with a growth estimate and an interval or confidence level",
+  "Does not call a sub-topic growing when its 95% interval crosses zero",
+  "Mentions a seasonality/school-year pattern or a data caveat (bot-detection update, low volume)",
+  "Recommends a concrete starting module and ties the reason to numbers from the output"
+ ]
+}

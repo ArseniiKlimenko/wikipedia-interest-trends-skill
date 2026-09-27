@@ -1,0 +1,57 @@
+{
+ "skill_name": "wikipedia-interest-trends",
+ "evals": [
+  {
+   "id": 1,
+   "name": "intermittent-fasting-pl-cs",
+   "prompt": "Порівняй зростання інтересу до інтервального голодування в польськомовній та чеськомовній Wikipedia за останні два роки.",
+   "expected_output": "Ukrainian answer + one-page PDF. Czech article exists, Polish Wikipedia has no linked article (content gap, or a clearly labelled proxy). Growth reported with uncertainty and confidence; period stated; relative vs raw distinction explained.",
+   "files": [],
+   "assertions": [
+    "report.pdf exists in outputs and has exactly 1 page",
+    "response.md is written in Ukrainian",
+    "Response states the analysed period (months or dates)",
+    "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+    "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+    "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+    "Czech interest is reported as declining (ground truth: relative -34%, raw -42%, 2025-09..2026-08 vs previous 12 months)",
+    "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "astronomy-uk-trust",
+   "prompt": "Ми думаємо додати курс з астрономії до освітнього застосунку. Чи зростає інтерес до цієї теми в україномовній Wikipedia, і наскільки цьому зростанню можна довіряти?",
+   "expected_output": "Ukrainian answer + one-page PDF. Interest in astronomy articles in uk.wikipedia is declining (not growing), relative to the whole wiki too; explicit trust assessment (interval, consistency, confidence grade) and caveats (seasonality, bot-detection change, proxy articles).",
+   "files": [],
+   "assertions": [
+    "report.pdf exists in outputs and has exactly 1 page",
+    "response.md is written in Ukrainian",
+    "Response states the analysed period (months or dates)",
+    "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+    "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+    "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+    "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+    "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "english-learning-audiences",
+   "prompt": "Ми створюємо застосунок для вивчення мов. Порівняй інтерес до вивчення англійської у вибраних нами мовних розділах Wikipedia — польському, турецькому, іспанському, в'єтнамському та німецькому — і підготуй короткий звіт: які аудиторії варто дослідити наступними й чому?",
+   "expected_output": "Ukrainian answer + one-page PDF ranking the five language audiences using size, growth and confidence, with reasons, proxy articles named, and caveats (language is not country, curiosity is not purchase intent).",
+   "files": [],
+   "assertions": [
+    "report.pdf exists in outputs and has exactly 1 page",
+    "response.md is written in Ukrainian",
+    "Response states the analysed period (months or dates)",
+    "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+    "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+    "Response ranks or prioritises the five language audiences explicitly",
+    "Ranking reasons use both audience size and growth (or intensity), not just one number",
+    "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+    "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal"
+   ]
+  }
+ ]
+}

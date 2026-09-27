@@ -1,0 +1,50 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'за останні два роки' (24 months); no explicit dates in response.md"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "'-34% [-51%, -8%] (довіра СЕРЕДНЯ)'; proxies with intervals. Weak point: '+26 п.п. більше стійкий' stated without saying the gap is not statistically clear"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "'Přerušovaný půst'; proxies 'Post' / 'Půst' named"
+  },
+  {
+   "text": "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+   "passed": true,
+   "evidence": "'польська Вікіпедія не має статті на цю тему'; the broader 'fasting' comparison is labelled 'проксі'"
+  },
+  {
+   "text": "Czech interest is reported as declining (ground truth: relative -34%, raw -42%, 2025-09..2026-08 vs previous 12 months)",
+   "passed": true,
+   "evidence": "'чітке падіння інтересу ... на 34%'"
+  },
+  {
+   "text": "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline",
+   "passed": true,
+   "evidence": "'Сама чеська Вікіпедія втратила 13% трафіку за період'"
+  }
+ ],
+ "summary": {
+  "passed": 8,
+  "failed": 0,
+  "total": 8,
+  "pass_rate": 1.0
+ }
+}

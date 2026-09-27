@@ -1,0 +1,50 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page (text-only PDF, 2.9 KB)"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'Період дослідження: 26 вересня 2024 – 26 вересня 2026' (includes the unfinished month)"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": false,
+   "evidence": "Per-article changes (e.g. 'Галактика +29.4%') and '-55.7%' carry no interval; only an overall 'Надійність тренду: Низька'"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "Lists 8 articles, though 'Місяць' (month) and 'Зірка' are wrong pages for Moon and star ('Місяць (супутник)', 'Зоря')"
+  },
+  {
+   "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+   "passed": true,
+   "evidence": "'Дані Wikipedia вказують на ЗНИЖЕННЯ'"
+  },
+  {
+   "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+   "passed": true,
+   "evidence": "Trust discussed with coefficient of variation and 7/8 articles agreeing (CV reasoning is weak)"
+  },
+  {
+   "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+   "passed": true,
+   "evidence": "Lists seasonality and overall Wikipedia traffic decline as possible causes"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.88
+ }
+}

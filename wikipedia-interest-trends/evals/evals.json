@@ -1,0 +1,134 @@
+{
+  "skill_name": "wikipedia-interest-trends",
+  "evals": [
+    {
+      "id": 1,
+      "name": "intermittent-fasting-pl-cs",
+      "prompt": "Порівняй зростання інтересу до інтервального голодування в польськомовній та чеськомовній Wikipedia за останні два роки.",
+      "expected_output": "Ukrainian answer + one-page PDF. Czech article exists, Polish Wikipedia has no linked article (content gap, or a clearly labelled proxy). Growth reported with uncertainty and confidence; period stated; relative vs raw distinction explained.",
+      "files": [],
+      "assertions": [
+        "report.pdf exists in outputs and has exactly 1 page",
+        "response.md is written in Ukrainian",
+        "Response states the analysed period (months or dates)",
+        "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+        "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+        "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+        "Czech interest is reported as declining (ground truth: relative -34% [-53%, -5%], MEDIUM confidence; raw views -42%; 2025-09..2026-08 vs previous 12 months)",
+        "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline",
+        "Does not name countries in place of language editions as the audiences (e.g. 'Vietnam', 'Turkey', 'Poland') unless it cites the reader-country data",
+        "Does not subtract the whole-wiki change from relative growth or compare the two as if relative growth still contained it (no double counting)"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "astronomy-uk-trust",
+      "prompt": "Ми думаємо додати курс з астрономії до освітнього застосунку. Чи зростає інтерес до цієї теми в україномовній Wikipedia, і наскільки цьому зростанню можна довіряти?",
+      "expected_output": "Ukrainian answer + one-page PDF. Interest in astronomy articles in uk.wikipedia is declining (not growing), relative to the whole wiki too; explicit trust assessment (interval, consistency, confidence grade) and caveats (seasonality, bot-detection change, proxy articles).",
+      "files": [],
+      "assertions": [
+        "report.pdf exists in outputs and has exactly 1 page",
+        "response.md is written in Ukrainian",
+        "Response states the analysed period (months or dates)",
+        "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+        "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+        "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; 7-article basket relative about -33% [-44%, -20%], HIGH; core article 'Астрономія' alone also declines)",
+        "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+        "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+        "Does not name countries in place of language editions as the audiences (e.g. 'Vietnam', 'Turkey', 'Poland') unless it cites the reader-country data",
+        "Does not subtract the whole-wiki change from relative growth or compare the two as if relative growth still contained it (no double counting)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "english-learning-audiences",
+      "prompt": "Ми створюємо застосунок для вивчення мов. Порівняй інтерес до вивчення англійської у вибраних нами мовних розділах Wikipedia — польському, турецькому, іспанському, в'єтнамському та німецькому — і підготуй короткий звіт: які аудиторії варто дослідити наступними й чому?",
+      "expected_output": "Ukrainian answer + one-page PDF ranking the five language audiences using size, growth and confidence, with reasons, proxy articles named, and caveats (language is not country, curiosity is not purchase intent).",
+      "files": [],
+      "assertions": [
+        "report.pdf exists in outputs and has exactly 1 page",
+        "response.md is written in Ukrainian",
+        "Response states the analysed period (months or dates)",
+        "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+        "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+        "Response ranks or prioritises the five language audiences explicitly",
+        "Ranking reasons use both audience size and growth (or intensity), not just one number",
+        "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+        "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+        "Does not describe a change whose 95% interval crosses zero as growth or a positive trend (e.g. 'English language · vi +2% [-21%, +31%]' is 'no clear change')",
+        "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+        "Does not name countries in place of language editions as the audiences (e.g. 'Vietnam', 'Turkey', 'Poland') unless it cites the reader-country data",
+        "Does not subtract the whole-wiki change from relative growth or compare the two as if relative growth still contained it (no double counting)",
+        "Contains no invented market facts presented as findings (market shares, numbers of speakers, revenue, 'users pay') that are not in the tool output"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "followup-add-languages",
+      "prompt": "[Контекст розмови: раніше ти вже проаналізував інтерес до вивчення англійської у польському, турецькому, іспанському, в'єтнамському та німецькому розділах Wikipedia; твої попередні результати, відповідь і звіт лежать у папці <previous analysis folder>]\n\nНове повідомлення користувача: «Дякую! Додай ще португальську та українську аудиторії. І для нас зростання важливіше за розмір аудиторії — перерахуй рейтинг з цим урахуванням і онови звіт.»",
+      "expected_output": "Re-run with pt and uk added, same IELTS/TOEFL basket, weights favouring growth, updated one-page PDF, and an explanation of what changed.",
+      "files": [],
+      "assertions": [
+        "report.pdf exists in outputs and has exactly 1 page",
+        "response.md is written in Ukrainian",
+        "The updated analysis covers all seven language editions (pl, tr, es, vi, de, pt, uk)",
+        "Measurement stays consistent with the previous analysis (same articles/basket), or the response explains what changed and why",
+        "The new ranking explicitly gives growth more weight than audience size, and the response says so",
+        "Growth figures for the new languages carry an uncertainty measure (interval or confidence level)",
+        "Response states how the recommendation or ranking changed compared with the previous version",
+        "Does not describe a change whose 95% interval crosses zero as growth or a positive trend (e.g. '+2% [-21%, +31%]' is 'no clear change')",
+        "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+        "Does not name countries in place of language editions as the audiences (e.g. 'Vietnam', 'Turkey', 'Poland') unless it cites the reader-country data",
+        "Does not subtract the whole-wiki change from relative growth or compare the two as if relative growth still contained it (no double counting)",
+        "Contains no invented market facts presented as findings (market shares, numbers of speakers, revenue, 'users pay') that are not in the tool output",
+        "Does not recommend avoiding an audience because the App Store search returned no (relevant) apps"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "growing-subtopics-astronomy",
+      "prompt": "У нас освітній застосунок з астрономії для українських школярів. Які підтеми астрономії зараз набирають інтерес в україномовній Вікіпедії, і з чого варто почати новий модуль?",
+      "expected_output": "Uses expand/discover to find sub-topics automatically, lists growing vs declining sub-topics with intervals and confidence, notes school seasonality, recommends a module grounded in the data.",
+      "assertions": [
+        "response.md is written in Ukrainian",
+        "Sub-topics were found with the skill's automatic tools (expand or discover output exists), not only a hand-picked list",
+        "Lists at least 3 sub-topics with a growth estimate and an interval or confidence level",
+        "Does not call a sub-topic growing when its 95% interval crosses zero",
+        "Mentions a seasonality/school-year pattern or a data caveat (bot-detection update, low volume)",
+        "Recommends a concrete starting module and ties the reason to numbers from the output"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "fasting-season-forecast-signals",
+      "prompt": "Плануємо запуск застосунку про інтервальне голодування в Чехії та Німеччині. Коли в році пік інтересу, чого чекати в наступні 12 місяців, і чи підтверджують це дані Google?",
+      "expected_output": "Analyze cs and de (36 months), report seasonal peaks, 12-month forecast with 80% range, run signals (Google Trends agreement + App Store), one-page PDF.",
+      "assertions": [
+        "report.pdf exists in outputs and has exactly 1 page",
+        "response.md is written in Ukrainian",
+        "States the seasonal peak month(s) for each of the two languages/countries from the tool output",
+        "Gives a 12-month forecast as a range (80% interval), not a single number, with a caveat that it is a scenario",
+        "Reports the Google Trends result for CZ and DE and whether it agrees with Wikipedia (or clearly states it was unavailable)",
+        "Includes App Store competition context for at least one country",
+        "The PDF includes the Second signals section (signals were run before report)"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "whats-growing-polish-wiki",
+      "prompt": "Що зараз найбільше набирає інтерес у польськомовній Вікіпедії, окрім новин про знаменитостей? Шукаємо ідеї для контенту.",
+      "expected_output": "Runs discover pl, lists growing topics with confidence, flags news-driven transient items, suggests follow-up analysis.",
+      "assertions": [
+        "response.md is written in Ukrainian",
+        "Used the discover command on pl (discover output exists)",
+        "Lists at least 5 growing topics with growth and confidence",
+        "No person/celebrity pages among the recommended topics",
+        "Flags that event/news-driven items (tournaments, eclipses) are likely transient or treats LOW confidence rows as hypotheses",
+        "Suggests a concrete next step (e.g. analyze a shortlisted topic, check a second signal)"
+      ],
+      "files": []
+    }
+  ]
+}

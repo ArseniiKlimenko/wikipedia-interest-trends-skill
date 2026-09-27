@@ -1,0 +1,40 @@
+{
+ "expectations": [
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "Used the discover command on pl (discover output exists)",
+   "passed": true,
+   "evidence": "discover.json present (pl, top lists)"
+  },
+  {
+   "text": "Lists at least 5 growing topics with growth and confidence",
+   "passed": true,
+   "evidence": "Morocco, Malta (HIGH); Pius X society, Paraguay, Ivory Coast, Senegal (MEDIUM), with intervals"
+  },
+  {
+   "text": "No person/celebrity pages among the recommended topics",
+   "passed": true,
+   "evidence": "No person pages (filtered by the tool)"
+  },
+  {
+   "text": "Flags that event/news-driven items (tournaments, eclipses) are likely transient or treats LOW confidence rows as hypotheses",
+   "passed": true,
+   "evidence": "LOW rows called hypotheses; BUT it presents Morocco/Senegal/Ivory Coast/Paraguay as an 'African geography trend with a June peak' instead of recognising the 2026 World Cup, which they share"
+  },
+  {
+   "text": "Suggests a concrete next step (e.g. analyze a shortlisted topic, check a second signal)",
+   "passed": true,
+   "evidence": "Validate with signals, re-check in 3 months"
+  }
+ ],
+ "summary": {
+  "passed": 6,
+  "failed": 0,
+  "total": 6,
+  "pass_rate": 1.0
+ }
+}

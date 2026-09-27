@@ -1,0 +1,358 @@
+{
+ "lang": "pl",
+ "seed": null,
+ "source": "articles in the monthly top-1000 of pl.wikipedia over the last 3 months (people, films, TV, sport, lists excluded)",
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31"
+ },
+ "measured": 60,
+ "min_views": 90,
+ "too_small": 0,
+ "growing": [
+  {
+   "title": "Maroko",
+   "qid": "Q1028",
+   "views_month": 30936.166666666668,
+   "growth_rel": 0.25506326011252645,
+   "lo": 0.11816395976530084,
+   "hi": 0.4372126810097327,
+   "growth_abs": 0.14466245819004087,
+   "spike_share": 0.12726253199096424,
+   "confidence": "high",
+   "direction": "up",
+   "concerns": [],
+   "top2_share": 0.3458034555024594,
+   "peak_month": "2026-07",
+   "burst": false
+  },
+  {
+   "title": "Malta",
+   "qid": "Q233",
+   "views_month": 64140.75,
+   "growth_rel": 0.1324087649350918,
+   "lo": 0.05451609980212347,
+   "hi": 0.22593885815744646,
+   "growth_abs": 0.032797183809152086,
+   "spike_share": 0.1517994215785783,
+   "confidence": "high",
+   "direction": "up",
+   "concerns": [],
+   "top2_share": 0.33080114175985365,
+   "peak_month": "2025-11",
+   "burst": false
+  },
+  {
+   "title": "Poznań",
+   "qid": "Q268",
+   "views_month": 27329.5,
+   "growth_rel": 0.08018113568521179,
+   "lo": 0.02645905891288074,
+   "hi": 0.15579483929015234,
+   "growth_abs": -0.01483627689564615,
+   "spike_share": 0.0012970129307340549,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "raw views move the other way (-1%): the change is relative to a shrinking wiki"
+   ],
+   "top2_share": 0.19095665855577307,
+   "peak_month": "2025-11",
+   "burst": false
+  },
+  {
+   "title": "Order Odrodzenia Polski",
+   "qid": "Q579688",
+   "views_month": 41586.166666666664,
+   "growth_rel": 0.07753241045993886,
+   "lo": 0.007079118208724862,
+   "hi": 0.16404060534642628,
+   "growth_abs": -0.01725200877449906,
+   "spike_share": 0.038564943145759194,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "raw views move the other way (-2%): the change is relative to a shrinking wiki"
+   ],
+   "top2_share": 0.21005783173090412,
+   "peak_month": "2026-04",
+   "burst": false
+  },
+  {
+   "title": "Bractwo Kapłańskie Świętego Piusa X",
+   "qid": "Q868160",
+   "views_month": 15898.583333333334,
+   "growth_rel": 1.1363524860539091,
+   "lo": 0.4501653623656248,
+   "hi": 2.3790140013633154,
+   "growth_abs": 0.9484296656310562,
+   "spike_share": 0.2625948678101451,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "26% of views came from short spikes"
+   ],
+   "top2_share": 0.5705120477191364,
+   "peak_month": "2026-07",
+   "burst": true
+  },
+  {
+   "title": "Paragwaj",
+   "qid": "Q733",
+   "views_month": 12932.166666666666,
+   "growth_rel": 0.6792083062250203,
+   "lo": 0.3042512207447214,
+   "hi": 1.2882952603239997,
+   "growth_abs": 0.5314978684375902,
+   "spike_share": 0.3351873823563521,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "34% of views came from short spikes"
+   ],
+   "top2_share": 0.5723712190532652,
+   "peak_month": "2026-06",
+   "burst": true
+  },
+  {
+   "title": "Wybrzeże Kości Słoniowej",
+   "qid": "Q1008",
+   "views_month": 14034.166666666666,
+   "growth_rel": 0.4714755841083005,
+   "lo": 0.09891825108264686,
+   "hi": 1.1474733504325523,
+   "growth_abs": 0.34203821656050937,
+   "spike_share": 0.37844093361940057,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "38% of views came from short spikes"
+   ],
+   "top2_share": 0.6812243928507808,
+   "peak_month": "2026-06",
+   "burst": true
+  },
+  {
+   "title": "Senegal",
+   "qid": "Q1041",
+   "views_month": 11550.583333333334,
+   "growth_rel": 0.29651786458800067,
+   "lo": 0.11438897172593994,
+   "hi": 0.5492188495937756,
+   "growth_abs": 0.18247053605373198,
+   "spike_share": 0.3221802402810166,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "32% of views came from short spikes"
+   ],
+   "top2_share": 0.5595749132439198,
+   "peak_month": "2026-06",
+   "burst": true
+  },
+  {
+   "title": "Falklandy",
+   "qid": "Q9648",
+   "views_month": 11997.166666666666,
+   "growth_rel": 0.2510000146837963,
+   "lo": 0.033995786867300086,
+   "hi": 0.5906640194397662,
+   "growth_abs": 0.1409566334332375,
+   "spike_share": 0.33951004580642424,
+   "confidence": "medium",
+   "direction": "up",
+   "concerns": [
+    "34% of views came from short spikes"
+   ],
+   "top2_share": 0.6068307794896017,
+   "peak_month": "2026-07",
+   "burst": true
+  },
+  {
+   "title": "Księga wieczysta",
+   "qid": "Q672598",
+   "views_month": 30300.166666666668,
+   "growth_rel": 24.56220506223734,
+   "lo": 7.616661141938811,
+   "hi": 50.81197495124395,
+   "growth_abs": 22.313642756680732,
+   "spike_share": 0.040963403454916746,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2026-06-22 (x0.01): check for a rename, merge, bot traffic or a real event",
+    "only 6 of the last 12 months moved that way year-over-year"
+   ],
+   "top2_share": 0.5836051506867399,
+   "peak_month": "2026-04",
+   "burst": true
+  },
+  {
+   "title": "Curaçao",
+   "qid": "Q25279",
+   "views_month": 74537.66666666667,
+   "growth_rel": 3.3160096115700632,
+   "lo": 0.891304858527954,
+   "hi": 7.802673216756423,
+   "growth_abs": 2.936354707019859,
+   "spike_share": 0.6674397108270297,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2026-07-07 (x0.12): check for a rename, merge, bot traffic or a real event",
+    "67% of views came from short spikes"
+   ],
+   "top2_share": 0.846031983829205,
+   "peak_month": "2026-06",
+   "burst": true
+  },
+  {
+   "title": "Ranking FIFA",
+   "qid": "Q180825",
+   "views_month": 13285.5,
+   "growth_rel": 3.088409086203585,
+   "lo": 0.5070926198789949,
+   "hi": 7.971493512990389,
+   "growth_abs": 2.728774909944149,
+   "spike_share": 0.3161438942443258,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2026-05-30 (x16): check for a rename, merge, bot traffic or a real event",
+    "32% of views came from short spikes"
+   ],
+   "top2_share": 0.5486558026921581,
+   "peak_month": "2026-06",
+   "burst": true
+  },
+  {
+   "title": "Odyseja",
+   "qid": "Q35160",
+   "views_month": 13112.333333333334,
+   "growth_rel": 2.760854151836903,
+   "lo": 0.2373179257268595,
+   "hi": 6.7681620594571115,
+   "growth_abs": 2.430033126736482,
+   "spike_share": 0.1643443511038768,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2026-07-07 (x7.8): check for a rename, merge, bot traffic or a real event",
+    "only 7 of the last 12 months moved that way year-over-year"
+   ],
+   "top2_share": 0.6997864605841828,
+   "peak_month": "2026-07",
+   "burst": true
+  },
+  {
+   "title": "Ceuta",
+   "qid": "Q5823",
+   "views_month": 20460.416666666668,
+   "growth_rel": 1.460842930622095,
+   "lo": 0.07816782393221591,
+   "hi": 3.510648655820758,
+   "growth_abs": 1.244376524839808,
+   "spike_share": 0.5724546793904727,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2026-07-07 (x8.1): check for a rename, merge, bot traffic or a real event",
+    "57% of views came from short spikes"
+   ],
+   "top2_share": 0.8603889624274513,
+   "peak_month": "2026-08",
+   "burst": true
+  },
+  {
+   "title": "Republika Zielonego Przylądka",
+   "qid": "Q1011",
+   "views_month": 65254.333333333336,
+   "growth_rel": 0.6220251529954792,
+   "lo": 0.1863747113502582,
+   "hi": 1.388397342517889,
+   "growth_abs": 0.4793447931121957,
+   "spike_share": 0.3702107216158798,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2026-05-16 (x3.3): check for a rename, merge, bot traffic or a real event",
+    "37% of views came from short spikes"
+   ],
+   "top2_share": 0.6574799630165047,
+   "peak_month": "2026-06",
+   "burst": true
+  },
+  {
+   "title": "Dancing with the Stars. Taniec z gwiazdami",
+   "qid": "Q9394132",
+   "views_month": 55520.0,
+   "growth_rel": 0.42503712817175643,
+   "lo": 0.10308534976379509,
+   "hi": 0.8147256403445751,
+   "growth_abs": 0.2996846884028064,
+   "spike_share": 0.3923006855972234,
+   "confidence": "low",
+   "direction": "up",
+   "concerns": [
+    "sudden persistent level change around 2025-11-23 (x0.31): check for a rename, merge, bot traffic or a real event; trend after it: +61%/yr",
+    "39% of views came from short spikes"
+   ],
+   "top2_share": 0.3902167387127762,
+   "peak_month": "2025-11",
+   "burst": true
+  }
+ ],
+ "declining": [
+  {
+   "title": "Niemcy",
+   "qid": "Q183",
+   "views_month": 31970.083333333332,
+   "growth_rel": -0.13318380712839506,
+   "lo": -0.18047628341166078,
+   "hi": -0.0792172858337084,
+   "growth_abs": -0.2094327149355132,
+   "spike_share": 0.008307158778991582,
+   "confidence": "high",
+   "direction": "down",
+   "concerns": [],
+   "top2_share": 0.1880429881060679,
+   "peak_month": "2025-09",
+   "burst": false
+  },
+  {
+   "title": "Polska",
+   "qid": "Q36",
+   "views_month": 127928.08333333333,
+   "growth_rel": -0.06074268532091698,
+   "lo": -0.10464398884718976,
+   "hi": -0.021352766137702303,
+   "growth_abs": -0.14336382805346237,
+   "spike_share": 0.008564896157475181,
+   "confidence": "medium",
+   "direction": "down",
+   "concerns": [
+    "only 7 of the last 12 months moved that way year-over-year"
+   ],
+   "top2_share": 0.1959851140321678,
+   "peak_month": "2026-01",
+   "burst": false
+  }
+ ],
+ "shared_peaks": {
+  "2026-07": [
+   "Bractwo Kapłańskie Świętego Piusa X",
+   "Falklandy",
+   "Odyseja"
+  ],
+  "2026-06": [
+   "Paragwaj",
+   "Wybrzeże Kości Słoniowej",
+   "Senegal",
+   "Curaçao",
+   "Ranking FIFA",
+   "Republika Zielonego Przylądka"
+  ]
+ },
+ "flat": 42,
+ "outdir": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends/wikitrends-output/discover_pl_top"
+}

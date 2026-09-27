@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "skill_name": "wikipedia-interest-trends",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "claude-haiku-4-5 (subagents)",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-26T14:05:17Z",
+    "evals_run": [
+      3,
+      4
+    ],
+    "runs_per_configuration": 2,
+    "runs_per_eval_by_configuration": {
+      "without_skill": 1,
+      "with_skill": 2
+    },
+    "qa_correction": "2026-09-27: runs_per_configuration was the aggregator default (3); corrected to the actual number of runs per eval. See README 'Чесність оцінювання' for baseline reuse."
+  },
+  "runs": [
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.82,
+        "passed": 9,
+        "failed": 2,
+        "total": 11,
+        "time_seconds": 130.3,
+        "tokens": 58126,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page(s)"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'вересень 2024 – серпень 2026'"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": true,
+          "evidence": "Intervals and confidence for every language"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "TOEFL and IELTS, learning intent explained"
+        },
+        {
+          "text": "Response ranks or prioritises the five language audiences explicitly",
+          "passed": true,
+          "evidence": "VI 1st, TR 2nd, ES/DE lower, PL last"
+        },
+        {
+          "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+          "passed": true,
+          "evidence": "Size, intensity and growth cited"
+        },
+        {
+          "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+          "passed": false,
+          "evidence": "Names language editions as countries ('Іспанія', 'Німеччина', 'В'єтнам'), ignoring that es.wikipedia is mostly Latin America; also garbles the note ('Австрійські читачі блокуються')"
+        },
+        {
+          "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+          "passed": true,
+          "evidence": "'Википедія показує інтерес (цікавість), але не готовність платити'"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": true,
+          "evidence": "'+7% (95% ДІ: -20% до +43%) – немає явного зростання, але й немає спаду'"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": false,
+          "evidence": "Unsupported or garbled claims: VN audience 'практично 100% місцева', 'Австрійські читачі', wiki declines attributed only to 'технічні оновлення'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 107.2,
+        "tokens": 60233,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page(s)"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "The updated analysis covers all seven language editions (pl, tr, es, vi, de, pt, uk)",
+          "passed": true,
+          "evidence": "All seven languages in the table/ranking"
+        },
+        {
+          "text": "Measurement stays consistent with the previous analysis (same articles/basket), or the response explains what changed and why",
+          "passed": true,
+          "evidence": "Same IELTS+TOEFL basket; the tool confirmed no measurement change"
+        },
+        {
+          "text": "The new ranking explicitly gives growth more weight than audience size, and the response says so",
+          "passed": true,
+          "evidence": "Weights stated (growth=3 / growth=2) and growth said to matter more"
+        },
+        {
+          "text": "Growth figures for the new languages carry an uncertainty measure (interval or confidence level)",
+          "passed": true,
+          "evidence": "pt -55% [-64%, -45%], uk -48% [-55%, -40%]"
+        },
+        {
+          "text": "Response states how the recommendation or ranking changed compared with the previous version",
+          "passed": true,
+          "evidence": "Uses --previous: '#1 (було #2)', new languages marked"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": true,
+          "evidence": "Turkish +7% [-20%, +43%] described as best but with the interval crossing zero or 'no clear decline'"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": true,
+          "evidence": "Reasons cite ranks, growth, intensity and the whole-wiki context; no outside claims"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "with_skill",
+      "run_number": 2,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 9,
+        "failed": 0,
+        "total": 9,
+        "time_seconds": 139.5,
+        "tokens": 62501,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page(s)"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian (run-2 has a few Russianisms: 'Спасибо', 'Но')"
+        },
+        {
+          "text": "The updated analysis covers all seven language editions (pl, tr, es, vi, de, pt, uk)",
+          "passed": true,
+          "evidence": "All seven languages in the table/ranking"
+        },
+        {
+          "text": "Measurement stays consistent with the previous analysis (same articles/basket), or the response explains what changed and why",
+          "passed": true,
+          "evidence": "Same IELTS+TOEFL basket; the tool confirmed no measurement change"
+        },
+        {
+          "text": "The new ranking explicitly gives growth more weight than audience size, and the response says so",
+          "passed": true,
+          "evidence": "Weights stated (growth=3 / growth=2) and growth said to matter more"
+        },
+        {
+          "text": "Growth figures for the new languages carry an uncertainty measure (interval or confidence level)",
+          "passed": true,
+          "evidence": "pt -55% [-64%, -45%], uk -48% [-55%, -40%]"
+        },
+        {
+          "text": "Response states how the recommendation or ranking changed compared with the previous version",
+          "passed": true,
+          "evidence": "Uses --previous: 'піднялась на 1-е місце (було 2-е)', new ones marked"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": true,
+          "evidence": "Turkish +7% [-20%, +43%] described as best but with the interval crossing zero or 'no clear decline'"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": true,
+          "evidence": "Reasons cite ranks, growth, intensity and the whole-wiki context; no outside claims"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.45,
+        "passed": 5,
+        "failed": 6,
+        "total": 11,
+        "time_seconds": 201.6,
+        "tokens": 63148,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": false,
+          "evidence": "auto check: PDF has 2 pages"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'період 90 днів (28 червня — 26 вересня 2026 р.)' (includes the current incomplete day)"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": false,
+          "evidence": "Growth = last 7 days vs first 7 days ('+5.2%'), no uncertainty at all"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "'статті \"English\"' in each edition"
+        },
+        {
+          "text": "Response ranks or prioritises the five language audiences explicitly",
+          "passed": true,
+          "evidence": "Tier 1: Polish, Vietnamese, Turkish"
+        },
+        {
+          "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+          "passed": true,
+          "evidence": "Uses absolute views and the 7-day 'growth'"
+        },
+        {
+          "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+          "passed": false,
+          "evidence": "No language-vs-country caveat; adds unsupported claims ('85 млн мовців', 'аніме')"
+        },
+        {
+          "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+          "passed": false,
+          "evidence": "Suggests A/B tests, but never says Wikipedia views are not purchase intent"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": false,
+          "evidence": "Calls 7-day changes such as '+5.2%' growth with no interval at all"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": false,
+          "evidence": "Unsupported claims: '85 млн мовців', 'молоде населення', 'аніме'"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 4,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.56,
+        "passed": 5,
+        "failed": 4,
+        "total": 9,
+        "time_seconds": 329.2,
+        "tokens": 105223,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "The updated analysis covers all seven language editions (pl, tr, es, vi, de, pt, uk)",
+          "passed": true,
+          "evidence": "All seven languages ranked"
+        },
+        {
+          "text": "Measurement stays consistent with the previous analysis (same articles/basket), or the response explains what changed and why",
+          "passed": false,
+          "evidence": "Its previous analysis used the 'English' article over 90 days; the new one silently switches to IELTS+TOEFL (found by using the skill CLI in the workspace) without explaining the change"
+        },
+        {
+          "text": "The new ranking explicitly gives growth more weight than audience size, and the response says so",
+          "passed": true,
+          "evidence": "'нові ваги: зростання=2.0, розмір=0.5' and says growth matters more"
+        },
+        {
+          "text": "Growth figures for the new languages carry an uncertainty measure (interval or confidence level)",
+          "passed": true,
+          "evidence": "pt/uk with confidence 'Середня'"
+        },
+        {
+          "text": "Response states how the recommendation or ranking changed compared with the previous version",
+          "passed": false,
+          "evidence": "Describes the 'first analysis' as VI #1 / TR #2, which were not its own earlier results (its own ranking was PL, VI, TR)"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": false,
+          "evidence": "'Єдина мова з позитивним зростанням (+7%)'"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": false,
+          "evidence": "Misreports its own previous ranking; speculative 'суспільно-політичні зміни'"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.94,
+        "stddev": 0.1039,
+        "min": 0.82,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 125.6667,
+        "stddev": 16.641,
+        "min": 107.2,
+        "max": 139.5
+      },
+      "tokens": {
+        "mean": 60286.6667,
+        "stddev": 2187.9937,
+        "min": 58126,
+        "max": 62501
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.505,
+        "stddev": 0.0778,
+        "min": 0.45,
+        "max": 0.56
+      },
+      "time_seconds": {
+        "mean": 265.4,
+        "stddev": 90.2268,
+        "min": 201.6,
+        "max": 329.2
+      },
+      "tokens": {
+        "mean": 84185.5,
+        "stddev": 29751.5178,
+        "min": 63148,
+        "max": 105223
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.43",
+      "time_seconds": "-139.7",
+      "tokens": "-23899"
+    }
+  },
+  "notes": [
+    "With --previous, both follow-up runs score 9/9 (the tool prints before/after ranks and flags measurement changes). Eval 3 still varies in free text: countries used for language editions, garbled geography."
+  ]
+}

@@ -1,0 +1,87 @@
+{
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "rows": [
+  {
+   "topic": "Астрономія",
+   "lang": "uk",
+   "geo": "UA",
+   "wiki_growth": -0.3332454520815221,
+   "wiki_direction": "down",
+   "trends": {
+    "growth": -0.0771551724137931,
+    "lo": -0.12885462546798213,
+    "hi": -0.017271220467218285,
+    "direction": "down",
+    "points": 105,
+    "resolution": "weekly",
+    "source": "topic /m/0dc_v",
+    "query": "/m/0dc_v"
+   },
+   "appstore": {
+    "warning": "most search results were unrelated apps (18 of 47 kept), so these numbers are rough",
+    "apps_found": 47,
+    "apps_relevant": 18,
+    "top_ratings_total": 2451,
+    "top_ratings_median": 0.0,
+    "updated_last_12m": 15,
+    "new_last_24m": 11,
+    "new_ratings_share": 0.0012239902080783353,
+    "leader_share": 0.605875152998776,
+    "top": [
+     {
+      "name": "Stellarium Mobile - Star Map",
+      "ratings": 1485,
+      "rating": 4.87946,
+      "released": "2019-04-07"
+     },
+     {
+      "name": "Sky Guide: AR Astronomy Finder",
+      "ratings": 783,
+      "rating": 4.85696,
+      "released": "2013-05-06"
+     },
+     {
+      "name": "Star Walk: Night Sky Astronomy",
+      "ratings": 176,
+      "rating": 4.64773,
+      "released": "2012-06-15"
+     },
+     {
+      "name": "Astronomy Game",
+      "ratings": 3,
+      "rating": 4.66667,
+      "released": "2020-04-02"
+     },
+     {
+      "name": "Orbit: ISS & Satellite Tracker",
+      "ratings": 3,
+      "rating": 5,
+      "released": "2026-06-15"
+     }
+    ],
+    "top_n": 18,
+    "term": "астрономія"
+   },
+   "agreement": "agree"
+  }
+ ],
+ "errors": [
+  "App Store UA 'астрономія': most search results were unrelated apps (18 of 47 kept), so these numbers are rough"
+ ],
+ "notes": [
+  "Google Trends for 'Астрономія' uses one topic, /m/0dc_v (Q333 = Astronomy), for the whole basket of 7 items; the other items are not in the Trends series."
+ ]
+}

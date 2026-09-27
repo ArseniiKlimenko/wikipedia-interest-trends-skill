@@ -1,0 +1,81 @@
+{
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "rows": [
+  {
+   "topic": "Астрономія",
+   "lang": "uk",
+   "geo": "UA",
+   "wiki_growth": -0.3332454520815221,
+   "wiki_direction": "down",
+   "trends": {
+    "growth": -0.0771551724137931,
+    "lo": -0.2782831510723338,
+    "hi": 0.18088433621438163,
+    "direction": "flat",
+    "points": 105,
+    "resolution": "weekly",
+    "source": "topic /m/0dc_v",
+    "query": "/m/0dc_v"
+   },
+   "appstore": {
+    "apps_found": 47,
+    "apps_relevant": 33,
+    "top_ratings_total": 2465,
+    "top_ratings_median": 0.0,
+    "updated_last_12m": 20,
+    "new_last_24m": 14,
+    "new_ratings_share": 0.005679513184584178,
+    "leader_share": 0.6024340770791075,
+    "top": [
+     {
+      "name": "Stellarium Mobile - Star Map",
+      "ratings": 1485,
+      "rating": 4.87946,
+      "released": "2019-04-07"
+     },
+     {
+      "name": "Sky Guide: AR Astronomy Finder",
+      "ratings": 783,
+      "rating": 4.85696,
+      "released": "2013-05-06"
+     },
+     {
+      "name": "Star Walk: Night Sky Astronomy",
+      "ratings": 176,
+      "rating": 4.64773,
+      "released": "2012-06-15"
+     },
+     {
+      "name": "Moon Phase Calendar & Tracker",
+      "ratings": 8,
+      "rating": 5,
+      "released": "2026-01-05"
+     },
+     {
+      "name": "Astronomy Game",
+      "ratings": 3,
+      "rating": 4.66667,
+      "released": "2020-04-02"
+     }
+    ],
+    "top_n": 25,
+    "term": "астрономія"
+   },
+   "agreement": "partly (one shows no clear change)"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,578 @@
+{
+ "tool": "wikipedia-interest-trends",
+ "version": "1.2.0",
+ "generated_at": "2026-09-27T22:29:35",
+ "params": {
+  "topics": [
+   "Астрономія=Q333|Q321|Q318|Q2|Q525|Q405|Q523"
+  ],
+  "langs": [
+   "uk"
+  ],
+  "agent": "user",
+  "access": "all-access",
+  "redirects": "auto",
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "report_lang": "uk"
+ },
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "months": [
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "topics": [
+  {
+   "key": "t0",
+   "label": "Астрономія",
+   "items": [
+    "Q333",
+    "Q321",
+    "Q318",
+    "Q2",
+    "Q525",
+    "Q405",
+    "Q523"
+   ],
+   "articles": {
+    "uk": [
+     {
+      "ref": "Q333",
+      "title": "Астрономія",
+      "name": "Астрономія"
+     },
+     {
+      "ref": "Q321",
+      "title": "Чумацький Шлях",
+      "name": "Чумацький Шлях"
+     },
+     {
+      "ref": "Q318",
+      "title": "Галактика",
+      "name": "Галактика"
+     },
+     {
+      "ref": "Q2",
+      "title": "Земля",
+      "name": "Земля"
+     },
+     {
+      "ref": "Q525",
+      "title": "Сонце",
+      "name": "Сонце"
+     },
+     {
+      "ref": "Q405",
+      "title": "Місяць (супутник)",
+      "name": "Місяць"
+     },
+     {
+      "ref": "Q523",
+      "title": "Зоря",
+      "name": "Зоря"
+     }
+    ]
+   },
+   "missing": {
+    "uk": []
+   }
+  }
+ ],
+ "series": [
+  {
+   "id": "t0|uk",
+   "name": "Астрономія · uk.wikipedia",
+   "topic": "Астрономія",
+   "lang": "uk",
+   "wiki": "uk.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "Астрономія",
+     "ref": "Q333",
+     "redirects_added": 0,
+     "views_recent_month_avg": 559.0,
+     "share_of_basket": 0.04561093356904875,
+     "growth_rel": -0.49031078574390174
+    },
+    {
+     "title": "Чумацький Шлях",
+     "ref": "Q321",
+     "redirects_added": 0,
+     "views_recent_month_avg": 2302.0833333333335,
+     "share_of_basket": 0.18783572448493915,
+     "growth_rel": -0.1793739082832766
+    },
+    {
+     "title": "Галактика",
+     "ref": "Q318",
+     "redirects_added": 0,
+     "views_recent_month_avg": 749.0,
+     "share_of_basket": 0.06111375535459305,
+     "growth_rel": -0.4002664445851518
+    },
+    {
+     "title": "Земля",
+     "ref": "Q2",
+     "redirects_added": 0,
+     "views_recent_month_avg": 3258.5,
+     "share_of_basket": 0.26587339362208473,
+     "growth_rel": -0.2993343452949455
+    },
+    {
+     "title": "Сонце",
+     "ref": "Q525",
+     "redirects_added": 0,
+     "views_recent_month_avg": 2481.5833333333335,
+     "share_of_basket": 0.20248181138233495,
+     "growth_rel": -0.38254245283590316
+    },
+    {
+     "title": "Місяць (супутник)",
+     "ref": "Q405",
+     "redirects_added": 0,
+     "views_recent_month_avg": 1958.0833333333333,
+     "share_of_basket": 0.15976745767321684,
+     "growth_rel": -0.39609837361631883
+    },
+    {
+     "title": "Зоря",
+     "ref": "Q523",
+     "redirects_added": 0,
+     "views_recent_month_avg": 947.5833333333334,
+     "share_of_basket": 0.07731692391378256,
+     "growth_rel": -0.37710973270436043
+    }
+   ],
+   "short_window": false,
+   "views_recent_month_avg": 12255.833333333334,
+   "views_prev_month_avg": 24385.5,
+   "daily_avg_recent": 402.93150684931504,
+   "share_ppm_recent": 216.73801282576187,
+   "project_growth": -0.2462189850949137,
+   "spike_share": 0.0,
+   "spike_days": 0,
+   "top_spikes": [],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.3332454520815221,
+   "growth_rel_lo": -0.4433902051193578,
+   "growth_rel_hi": -0.2013046998835076,
+   "growth_rel_p": 0.0008859075507003933,
+   "growth_rel_with_spikes": -0.3332454520815221,
+   "growth_abs": -0.4974130801774279,
+   "growth_abs_lo": -0.6563586880641831,
+   "growth_abs_hi": -0.2649498089917713,
+   "growth_abs_with_spikes": -0.4974130801774278,
+   "trend_annual": -0.3676103263763132,
+   "trend_p": 5.2745128282793985e-05,
+   "months_up": 0,
+   "momentum_6m": -0.24822193884514399,
+   "history_months": 48,
+   "yearly": [
+    {
+     "from": "2022-09..2023-08",
+     "to": "2023-09..2024-08",
+     "growth_rel": -0.009278505431881023,
+     "growth_abs": -0.0662174139046472
+    },
+    {
+     "from": "2023-09..2024-08",
+     "to": "2024-09..2025-08",
+     "growth_rel": -0.275106152717422,
+     "growth_abs": -0.41404485382458955
+    },
+    {
+     "from": "2024-09..2025-08",
+     "to": "2025-09..2026-08",
+     "growth_rel": -0.3332454520815221,
+     "growth_abs": -0.4974130801774278
+    }
+   ],
+   "monthly": {
+    "views": [
+     28372.0,
+     31716.0,
+     30755.0,
+     29876.0,
+     34227.0,
+     35191.0,
+     28246.0,
+     23790.0,
+     17885.0,
+     10083.0,
+     8843.0,
+     13642.0,
+     17323.0,
+     15732.0,
+     14433.0,
+     12838.0,
+     12063.0,
+     13457.0,
+     12229.0,
+     15698.0,
+     11799.0,
+     7247.0,
+     6470.0,
+     7781.0
+    ],
+    "views_clean": [
+     28372.0,
+     31716.0,
+     30755.0,
+     29876.0,
+     34227.0,
+     35191.0,
+     28246.0,
+     23790.0,
+     17885.0,
+     10083.0,
+     8843.0,
+     13642.0,
+     17323.0,
+     15732.0,
+     14433.0,
+     12838.0,
+     12063.0,
+     13457.0,
+     12229.0,
+     15698.0,
+     11799.0,
+     7247.0,
+     6470.0,
+     7781.0
+    ],
+    "share_ppm": [
+     380.78475722857894,
+     382.0548237348704,
+     366.85129109468045,
+     353.8490829397449,
+     363.6844341181456,
+     429.4110093119628,
+     355.2727170275323,
+     329.743998070159,
+     259.051586143821,
+     187.93098036713025,
+     142.14875746104155,
+     220.73784659114472,
+     282.793527944516,
+     238.20244549059848,
+     214.9761344913814,
+     231.32633561858333,
+     199.4808305916777,
+     260.72207673726695,
+     221.88230146360308,
+     293.7387979103641,
+     210.88450365653785,
+     150.0041149190073,
+     122.07766679276327,
+     153.40942238266933
+    ],
+    "share_ppm_raw": [
+     380.78475722857894,
+     382.0548237348704,
+     366.85129109468045,
+     353.8490829397449,
+     363.6844341181456,
+     429.4110093119628,
+     355.2727170275323,
+     329.743998070159,
+     259.051586143821,
+     187.93098036713025,
+     142.14875746104155,
+     220.73784659114472,
+     282.793527944516,
+     238.20244549059848,
+     214.9761344913814,
+     231.32633561858333,
+     199.4808305916777,
+     260.72207673726695,
+     221.88230146360308,
+     293.7387979103641,
+     210.88450365653785,
+     150.0041149190073,
+     122.07766679276327,
+     153.40942238266933
+    ]
+   },
+   "seasonality": {
+    "strength": 0.852015523564635,
+    "p": 0.004,
+    "significant": true,
+    "years": 4,
+    "peak": [
+     [
+      "Feb",
+      0.35816862311734354
+     ],
+     [
+      "Mar",
+      0.15534603725677054
+     ]
+    ],
+    "low": [
+     [
+      "Jul",
+      -0.3938377217315875
+     ],
+     [
+      "Jun",
+      -0.30066164744267776
+     ]
+    ],
+    "indices": [
+     0.07671677629990463,
+     0.30613719161752645,
+     0.1443998984593429,
+     0.13785981670497585,
+     0.0671882875168293,
+     -0.35762060156438963,
+     -0.5006075428396,
+     -0.22089051792548806,
+     0.09791634554820221,
+     0.07125993497616849,
+     0.09664642729382149,
+     0.08099398391270633
+    ]
+   },
+   "forecast": {
+    "method": "seasonal naive + average yearly change",
+    "chosen": "snaive_drift",
+    "next12": -0.21612583648879935,
+    "next12_lo80": -0.3781173391836691,
+    "next12_hi80": 0.06942726335487351,
+    "skill": 0.400132485845374,
+    "months": [
+     "2026-09",
+     "2026-10",
+     "2026-11",
+     "2026-12",
+     "2027-01",
+     "2027-02",
+     "2027-03",
+     "2027-04",
+     "2027-05",
+     "2027-06",
+     "2027-07",
+     "2027-08"
+    ],
+    "origins": 3,
+    "history_months": 48,
+    "backtest_mae": {
+     "ets": 0.20201706889629867,
+     "snaive": 0.3367694768085497,
+     "snaive_drift": 0.18618404354650067
+    },
+    "median": [
+     216.66738567938282,
+     184.08782506641722,
+     166.65941657444148,
+     179.2141678744685,
+     153.42893737640364,
+     201.56790466766424,
+     170.49716141593106,
+     227.71986667655753,
+     162.82430542776427,
+     115.8450528634355,
+     94.5135379274083,
+     117.65783642740827
+    ],
+    "lo80": [
+     170.55799861439849,
+     143.10301114273597,
+     128.72840008665867,
+     138.1399890009931,
+     120.67112064930467,
+     157.18175331423106,
+     134.1263622731897,
+     177.51016460595926,
+     127.45935375446673,
+     90.11679323652534,
+     73.77311707290215,
+     91.96252087273484
+    ],
+    "hi80": [
+     299.89079215974664,
+     254.15009862325425,
+     228.47661294119845,
+     247.7200189902162,
+     214.25403501034612,
+     280.7815491509348,
+     235.77467646291683,
+     312.1302131133826,
+     224.09226391886273,
+     159.39891801672212,
+     128.87273192590072,
+     162.86860336714096
+    ]
+   },
+   "changepoints": [
+    {
+     "month": "2024-02",
+     "level_jump": -0.1351175161453495,
+     "trend_before": 0.08085498641921829,
+     "trend_after": -0.2728816483309321
+    }
+   ],
+   "event_step": {
+    "rel": 0.03543862057984848,
+    "adjusted": true,
+    "flag": false
+   },
+   "driven_by": null,
+   "top_article_share": 0.26587339362208473,
+   "status": "ok",
+   "confidence": {
+    "grade": "high",
+    "direction": "down",
+    "good": [
+     "solid volume (~403 views/day)",
+     "95% interval excludes zero (-44% to -20%)",
+     "raw views move the same way (-50%)",
+     "12 of the last 12 months moved the same way year-over-year",
+     "spikes are only 0% of views"
+    ],
+    "bad": []
+   }
+  }
+ ],
+ "comparisons": [],
+ "ranking": {
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "groups": []
+ },
+ "geo": {
+  "uk": [
+   {
+    "country": "UA",
+    "share": 0.6491
+   },
+   {
+    "country": "US",
+    "share": 0.1122
+   },
+   {
+    "country": "PL",
+    "share": 0.0385
+   },
+   {
+    "country": "GB",
+    "share": 0.0268
+   },
+   {
+    "country": "DE",
+    "share": 0.0267
+   },
+   {
+    "country": "BR",
+    "share": 0.0108
+   },
+   {
+    "country": "NL",
+    "share": 0.0092
+   },
+   {
+    "country": "CZ",
+    "share": 0.0087
+   }
+  ]
+ },
+ "pooling": [],
+ "project_totals": {
+  "uk": {
+   "growth": -0.2462189850949137,
+   "monthly": [
+    74509285.0,
+    83014264.0,
+    83835060.0,
+    84431475.0,
+    94111809.0,
+    81951788.0,
+    79505120.0,
+    72146878.0,
+    69040303.0,
+    53652676.0,
+    62209478.0,
+    61801817.0,
+    61256706.0,
+    66044662.0,
+    67137685.0,
+    55497356.0,
+    60471976.0,
+    51614348.0,
+    55114806.0,
+    53442038.0,
+    55950057.0,
+    48312008.0,
+    52999047.0,
+    50720483.0
+   ],
+   "event_step": {
+    "rel": 0.2937191929793215,
+    "adjusted": true
+   }
+  }
+ },
+ "warnings": [
+  "The period includes Wikimedia's bot-detection update (May-June 2025), which reclassified part of the earlier 'human' views as automated. Measured step of whole-wiki human views across it (Jul-Aug vs Mar-Apr 2025, seasonally adjusted with 2024 where available): uk +29%. Relative growth nets out a step that a topic shares with its wiki. No series moved differently from its wiki by 25% or more, so the update is unlikely to drive these results; do not cite it as an explanation."
+ ],
+ "notes": [
+  {
+   "code": "known_event",
+   "steps": "uk +29%"
+  }
+ ],
+ "outdir": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis",
+ "draft_sha1": "cd500caaf2e42f6452db1105329f11fcec595d00",
+ "files": {
+  "summary": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/summary.md",
+  "analysis": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/analysis.json",
+  "monthly data": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/data.csv",
+  "trend chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/trend.png",
+  "growth chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/growth.png",
+  "daily diagnostic chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/daily.png",
+  "narrative draft (edit, then run report)": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-2-astronomy-uk-trust/with_skill/run-2/outputs/analysis/narrative.md"
+ }
+}

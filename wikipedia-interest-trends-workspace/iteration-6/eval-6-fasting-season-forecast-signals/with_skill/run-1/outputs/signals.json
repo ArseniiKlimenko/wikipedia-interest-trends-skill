@@ -1,0 +1,143 @@
+{
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "rows": [
+  {
+   "topic": "intermittent fasting",
+   "lang": "cs",
+   "geo": "CZ",
+   "wiki_growth": -0.3369018787773075,
+   "wiki_direction": "down",
+   "trends": {
+    "growth": -0.2225475841874085,
+    "lo": -0.3810449203100038,
+    "hi": 0.014153661464585679,
+    "direction": "flat",
+    "points": 105,
+    "resolution": "weekly",
+    "source": "topic /m/04ycpbq",
+    "query": "/m/04ycpbq"
+   },
+   "appstore": {
+    "apps_found": 47,
+    "apps_relevant": 46,
+    "top_ratings_total": 646705,
+    "top_ratings_median": 96.0,
+    "updated_last_12m": 21,
+    "new_last_24m": 0,
+    "new_ratings_share": 0.0,
+    "leader_share": 0.5295242807771704,
+    "top": [
+     {
+      "name": "Instagram",
+      "ratings": 342446,
+      "rating": 4.73648,
+      "released": "2010-10-06"
+     },
+     {
+      "name": "WhatsApp Messenger",
+      "ratings": 281647,
+      "rating": 4.72036,
+      "released": "2009-05-04"
+     },
+     {
+      "name": "AI Calorie Counter by Yazio",
+      "ratings": 15697,
+      "rating": 4.73109,
+      "released": "2015-02-04"
+     },
+     {
+      "name": "MyFitnessPal: Calorie Counter",
+      "ratings": 2357,
+      "rating": 4.65337,
+      "released": "2009-12-08"
+     },
+     {
+      "name": "Zero: Intermittent Fasting",
+      "ratings": 1274,
+      "rating": 4.80612,
+      "released": "2016-12-23"
+     }
+    ],
+    "top_n": 25,
+    "term": "Intermittent fasting"
+   },
+   "agreement": "partly (one shows no clear change)"
+  },
+  {
+   "topic": "intermittent fasting",
+   "lang": "de",
+   "geo": "DE",
+   "wiki_growth": -0.3759670258663349,
+   "wiki_direction": "down",
+   "trends": {
+    "growth": 0.5782493368700268,
+    "lo": 0.2694589320254213,
+    "hi": 1.0097241092995166,
+    "direction": "up",
+    "points": 105,
+    "resolution": "weekly",
+    "source": "topic /m/04ycpbq",
+    "query": "/m/04ycpbq"
+   },
+   "appstore": {
+    "apps_found": 47,
+    "apps_relevant": 45,
+    "top_ratings_total": 739509,
+    "top_ratings_median": 1235.0,
+    "updated_last_12m": 19,
+    "new_last_24m": 0,
+    "new_ratings_share": 0.0,
+    "leader_share": 0.5997749858351961,
+    "top": [
+     {
+      "name": "Yazio: Kalorien Zähler & Diät",
+      "ratings": 443539,
+      "rating": 4.62211,
+      "released": "2015-01-06"
+     },
+     {
+      "name": "Fastic AI Abnehmen & Fasten",
+      "ratings": 131139,
+      "rating": 4.68835,
+      "released": "2019-05-03"
+     },
+     {
+      "name": "MyFitnessPal: Kalorien Tracker",
+      "ratings": 79812,
+      "rating": 4.52214,
+      "released": "2009-12-08"
+     },
+     {
+      "name": "BodyFast: Intervallfasten KI",
+      "ratings": 43447,
+      "rating": 4.57378,
+      "released": "2017-12-20"
+     },
+     {
+      "name": "Simple: KI-Abnehmcoach",
+      "ratings": 10025,
+      "rating": 4.45256,
+      "released": "2019-07-01"
+     }
+    ],
+    "top_n": 25,
+    "term": "Intermittent Fasting"
+   },
+   "agreement": "DISAGREE"
+  }
+ ],
+ "errors": []
+}

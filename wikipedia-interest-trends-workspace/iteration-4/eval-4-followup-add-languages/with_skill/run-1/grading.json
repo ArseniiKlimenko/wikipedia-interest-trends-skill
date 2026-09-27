@@ -1,0 +1,55 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page(s)"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "Ukrainian"
+  },
+  {
+   "text": "The updated analysis covers all seven language editions (pl, tr, es, vi, de, pt, uk)",
+   "passed": true,
+   "evidence": "Seven languages ranked"
+  },
+  {
+   "text": "Measurement stays consistent with the previous analysis (same articles/basket), or the response explains what changed and why",
+   "passed": false,
+   "evidence": "Splits the earlier combined IELTS+TOEFL basket into two separate topics without saying so or why"
+  },
+  {
+   "text": "The new ranking explicitly gives growth more weight than audience size, and the response says so",
+   "passed": true,
+   "evidence": "'зростання в два рази важливіше за розмір аудиторії (growth=2 vs size=1)'"
+  },
+  {
+   "text": "Growth figures for the new languages carry an uncertainty measure (interval or confidence level)",
+   "passed": true,
+   "evidence": "pt/uk TOEFL figures with confidence levels"
+  },
+  {
+   "text": "Response states how the recommendation or ranking changed compared with the previous version",
+   "passed": false,
+   "evidence": "'Що змінилось' lists only the new rankings; no before/after"
+  },
+  {
+   "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+   "passed": true,
+   "evidence": "'+23% (95% ДІ [-6%, +68%]) — єдиний позитивний тренд, хоча довіра низька через широкий інтервал' (hedged)"
+  },
+  {
+   "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+   "passed": true,
+   "evidence": "No outside claims; reasons cite ranks, growth, intensity"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 2,
+  "total": 9,
+  "pass_rate": 0.78
+ }
+}

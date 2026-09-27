@@ -1,0 +1,65 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'період вересень 2024 — август 2026 (24 місяці)'"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "Each language has relative growth + confidence grade; Turkish interval -20%..+43% given"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "'вимірюючи через статті про іспити IELTS і TOEFL'"
+  },
+  {
+   "text": "Response ranks or prioritises the five language audiences explicitly",
+   "passed": true,
+   "evidence": "Priority 1 Vietnamese, 2 Turkish, secondary es/de/pl"
+  },
+  {
+   "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+   "passed": true,
+   "evidence": "Uses views/month (size), relative growth and intensity per 1M"
+  },
+  {
+   "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+   "passed": true,
+   "evidence": "Section 'Мова — не країна' present, BUT it misreads the data: claims tr/vi Wikipedias 'служать переважно діаспорам' because home countries are withheld from Wikimedia's country data"
+  },
+  {
+   "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+   "passed": true,
+   "evidence": "'Вікіпедія показує цікавість читачів, а не готовність платити'"
+  },
+  {
+   "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+   "passed": false,
+   "evidence": "'Турецька: +7% (НИЗЬКА довіра) — єдиний ріст' although the interval is -20%..+43%"
+  },
+  {
+   "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+   "passed": false,
+   "evidence": "Misreads the geography note as 'читачі розташовані переважно в діаспорі'; PDF adds 'найвища інтенсивність ... на світі' and speaker-count claims"
+  }
+ ],
+ "summary": {
+  "passed": 9,
+  "failed": 2,
+  "total": 11,
+  "pass_rate": 0.82
+ }
+}

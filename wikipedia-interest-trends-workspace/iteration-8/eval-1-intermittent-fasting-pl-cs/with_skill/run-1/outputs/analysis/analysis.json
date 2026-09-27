@@ -1,0 +1,504 @@
+{
+ "tool": "wikipedia-interest-trends",
+ "version": "1.2.0",
+ "generated_at": "2026-09-27T22:29:35",
+ "params": {
+  "topics": [
+   "Інтервальне голодування=Q1666254"
+  ],
+  "langs": [
+   "cs"
+  ],
+  "agent": "user",
+  "access": "all-access",
+  "redirects": "auto",
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "report_lang": "uk"
+ },
+ "period": {
+  "start": "2024-09-01",
+  "end": "2026-08-31",
+  "months": 24,
+  "growth_window_months": 12,
+  "recent": [
+   "2025-09",
+   "2026-08"
+  ],
+  "previous": [
+   "2024-09",
+   "2025-08"
+  ]
+ },
+ "months": [
+  "2024-09",
+  "2024-10",
+  "2024-11",
+  "2024-12",
+  "2025-01",
+  "2025-02",
+  "2025-03",
+  "2025-04",
+  "2025-05",
+  "2025-06",
+  "2025-07",
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08"
+ ],
+ "topics": [
+  {
+   "key": "t0",
+   "label": "Інтервальне голодування",
+   "items": [
+    "Q1666254"
+   ],
+   "articles": {
+    "cs": [
+     {
+      "ref": "Q1666254",
+      "title": "Přerušovaný půst",
+      "name": "Інтервальне голодування"
+     }
+    ]
+   },
+   "missing": {
+    "cs": []
+   }
+  }
+ ],
+ "series": [
+  {
+   "id": "t0|cs",
+   "name": "Інтервальне голодування · cs.wikipedia",
+   "topic": "Інтервальне голодування",
+   "lang": "cs",
+   "wiki": "cs.wikipedia",
+   "missing_items": [],
+   "articles": [
+    {
+     "title": "Přerušovaný půst",
+     "ref": "Q1666254",
+     "redirects_added": 0,
+     "views_recent_month_avg": 183.16666666666666,
+     "share_of_basket": 1.0,
+     "growth_rel": -0.3369018787773075
+    }
+   ],
+   "short_window": false,
+   "views_recent_month_avg": 183.16666666666666,
+   "views_prev_month_avg": 395.0833333333333,
+   "daily_avg_recent": 6.021917808219178,
+   "share_ppm_recent": 3.0810928585344755,
+   "project_growth": -0.1256716656099166,
+   "spike_share": 0.1651534803285776,
+   "spike_days": 11,
+   "top_spikes": [
+    {
+     "date": "2025-04-14",
+     "views": 508,
+     "x_normal": 36.3
+    },
+    {
+     "date": "2025-08-15",
+     "views": 164,
+     "x_normal": 27.3
+    },
+    {
+     "date": "2024-10-17",
+     "views": 110,
+     "x_normal": 7.9
+    }
+   ],
+   "level_shift": null,
+   "growth_note": null,
+   "growth_rel": -0.3369018787773075,
+   "growth_rel_lo": -0.5347458526742703,
+   "growth_rel_hi": -0.054927030964806604,
+   "growth_rel_p": 0.028475719010292,
+   "growth_rel_with_spikes": -0.4697469442491816,
+   "growth_abs": -0.42023452413416973,
+   "growth_abs_lo": -0.5813972470504721,
+   "growth_abs_hi": -0.19702389762720787,
+   "growth_abs_with_spikes": -0.536384728960135,
+   "trend_annual": -0.407034851129947,
+   "trend_p": 0.0001207086399803714,
+   "months_up": 1,
+   "momentum_6m": -0.43114364485596346,
+   "history_months": 48,
+   "yearly": [
+    {
+     "from": "2022-09..2023-08",
+     "to": "2023-09..2024-08",
+     "growth_rel": -0.5422817400844526,
+     "growth_abs": -0.551561799432073
+    },
+    {
+     "from": "2023-09..2024-08",
+     "to": "2024-09..2025-08",
+     "growth_rel": -0.35778170975074386,
+     "growth_abs": -0.3889351774704216
+    },
+    {
+     "from": "2024-09..2025-08",
+     "to": "2025-09..2026-08",
+     "growth_rel": -0.3369018787773075,
+     "growth_abs": -0.4202345241341696
+    }
+   ],
+   "monthly": {
+    "views": [
+     393.0,
+     634.0,
+     329.0,
+     294.0,
+     489.0,
+     272.0,
+     366.0,
+     958.0,
+     225.0,
+     238.0,
+     157.0,
+     386.0,
+     270.0,
+     141.0,
+     151.0,
+     218.0,
+     474.0,
+     196.0,
+     179.0,
+     135.0,
+     109.0,
+     115.0,
+     91.0,
+     119.0
+    ],
+    "views_clean": [
+     393.0,
+     411.0,
+     273.0,
+     278.0,
+     489.0,
+     272.0,
+     366.0,
+     383.0,
+     225.0,
+     238.0,
+     157.0,
+     182.0,
+     198.0,
+     141.0,
+     151.0,
+     218.0,
+     474.0,
+     196.0,
+     179.0,
+     135.0,
+     109.0,
+     115.0,
+     91.0,
+     119.0
+    ],
+    "share_ppm": [
+     6.308916430118421,
+     5.7984103495784005,
+     3.9650166436293874,
+     3.951065850467422,
+     5.863548323750029,
+     3.8994729632909344,
+     4.89319014860712,
+     5.715547270515779,
+     3.0558130398713383,
+     4.229499164389579,
+     2.5670435331832313,
+     3.164384800388781,
+     3.455108215210803,
+     2.1188261444692906,
+     2.0718006527132493,
+     3.635313549212148,
+     7.031597685803294,
+     3.361552249575634,
+     3.0840697425673573,
+     2.4613424741636982,
+     1.8229595229398552,
+     2.1421929965004947,
+     1.71274564136819,
+     2.3121265988404005
+    ],
+    "share_ppm_raw": [
+     6.308916430118421,
+     8.944506475991986,
+     4.778353391040544,
+     4.178465323875619,
+     5.863548323750029,
+     3.8994729632909344,
+     4.89319014860712,
+     14.296329726250953,
+     3.0558130398713383,
+     4.229499164389579,
+     2.5670435331832313,
+     6.711277653571811,
+     4.711511202560186,
+     2.1188261444692906,
+     2.0718006527132493,
+     3.635313549212148,
+     7.031597685803294,
+     3.361552249575634,
+     3.0840697425673573,
+     2.4613424741636982,
+     1.8229595229398552,
+     2.1421929965004947,
+     1.71274564136819,
+     2.3121265988404005
+    ]
+   },
+   "seasonality": {
+    "strength": 0.48606035051615026,
+    "p": 0.018,
+    "significant": true,
+    "years": 4,
+    "peak": [
+     [
+      "Apr",
+      0.3132171183513457
+     ],
+     [
+      "Feb",
+      0.2640458535889496
+     ]
+    ],
+    "low": [
+     [
+      "Oct",
+      -0.3496436643868893
+     ],
+     [
+      "Nov",
+      -0.3424562935092177
+     ]
+    ],
+    "indices": [
+     0.2165023759336781,
+     0.23431757164022277,
+     0.21235585596940848,
+     0.2724799421614235,
+     -0.037428996507129345,
+     0.216084044960218,
+     0.042803579646840326,
+     0.14147290523057,
+     -0.09218379583075383,
+     -0.4302348576683578,
+     -0.4192440433892601,
+     -0.3569245821468599
+    ]
+   },
+   "forecast": {
+    "method": "seasonal naive + average yearly change",
+    "chosen": "snaive_drift",
+    "next12": -0.43437022097159006,
+    "next12_lo80": -0.6154798810957952,
+    "next12_hi80": -0.05813147434287246,
+    "skill": 0.1781045539622067,
+    "months": [
+     "2026-09",
+     "2026-10",
+     "2026-11",
+     "2026-12",
+     "2027-01",
+     "2027-02",
+     "2027-03",
+     "2027-04",
+     "2027-05",
+     "2027-06",
+     "2027-07",
+     "2027-08"
+    ],
+    "origins": 3,
+    "history_months": 48,
+    "backtest_mae": {
+     "ets": 0.4694239383842754,
+     "snaive": 0.571147997774269,
+     "snaive_drift": 0.2652459989634722
+    },
+    "median": [
+     1.8173245951368846,
+     1.1165817934538695,
+     1.0952701448639355,
+     1.892194627888381,
+     3.691840644583152,
+     1.7503957673541124,
+     1.6121156966010735,
+     1.293189533977,
+     0.9568422594399012,
+     1.1094054823451267,
+     0.8998766977905569,
+     1.23104321888343
+    ],
+    "lo80": [
+     1.2405082793070292,
+     0.7536202122945758,
+     0.7449406072674523,
+     1.2865820171369267,
+     2.481521965514944,
+     1.2069183183795942,
+     1.0994014842148276,
+     0.8867646234135028,
+     0.658690181918031,
+     0.7581999479269637,
+     0.6017566756327472,
+     0.8329641791181367
+    ],
+    "hi80": [
+     3.3927416680580786,
+     2.0597149186391013,
+     1.997212093274674,
+     3.6042890963294276,
+     6.88157738299086,
+     3.2463255344994697,
+     3.0152749672554138,
+     2.3905595646877784,
+     1.8072217381426492,
+     2.1142423524284193,
+     1.648883642471472,
+     2.221089791259239
+    ]
+   },
+   "changepoints": [],
+   "event_step": {
+    "rel": -0.4118614188325347,
+    "adjusted": true,
+    "flag": false
+   },
+   "driven_by": null,
+   "top_article_share": 1.0,
+   "status": "ok",
+   "confidence": {
+    "grade": "medium",
+    "direction": "down",
+    "good": [
+     "95% interval excludes zero (-53% to -5%)",
+     "raw views move the same way (-42%)",
+     "11 of the last 12 months moved the same way year-over-year",
+     "spikes are only 17% of views"
+    ],
+    "bad": [
+     "low volume (~6 views/day)"
+    ]
+   }
+  }
+ ],
+ "comparisons": [],
+ "ranking": {
+  "weights": {
+   "size": 1.0,
+   "growth": 1.0,
+   "intensity": 0.5
+  },
+  "groups": []
+ },
+ "geo": {
+  "cs": [
+   {
+    "country": "CZ",
+    "share": 0.795
+   },
+   {
+    "country": "US",
+    "share": 0.0517
+   },
+   {
+    "country": "SK",
+    "share": 0.0493
+   },
+   {
+    "country": "DE",
+    "share": 0.0098
+   },
+   {
+    "country": "BR",
+    "share": 0.0078
+   },
+   {
+    "country": "PL",
+    "share": 0.007
+   },
+   {
+    "country": "GB",
+    "share": 0.0061
+   },
+   {
+    "country": "AT",
+    "share": 0.0053
+   }
+  ]
+ },
+ "pooling": [],
+ "project_totals": {
+  "cs": {
+   "growth": -0.1256716656099166,
+   "monthly": [
+    62292789.0,
+    70881496.0,
+    68852170.0,
+    70360761.0,
+    83396601.0,
+    69753016.0,
+    74797829.0,
+    67010206.0,
+    73630159.0,
+    56271438.0,
+    61159851.0,
+    57515129.0,
+    57306454.0,
+    66546281.0,
+    72883460.0,
+    59967317.0,
+    67410000.0,
+    58306397.0,
+    58040192.0,
+    54848117.0,
+    59792880.0,
+    53683305.0,
+    53131065.0,
+    51467770.0
+   ],
+   "event_step": {
+    "rel": 0.03371533329982013,
+    "adjusted": true
+   }
+  }
+ },
+ "warnings": [
+  "The period includes Wikimedia's bot-detection update (May-June 2025), which reclassified part of the earlier 'human' views as automated. Measured step of whole-wiki human views across it (Jul-Aug vs Mar-Apr 2025, seasonally adjusted with 2024 where available): cs +3%. Relative growth nets out a step that a topic shares with its wiki. No series moved differently from its wiki by 25% or more, so the update is unlikely to drive these results; do not cite it as an explanation."
+ ],
+ "notes": [
+  {
+   "code": "known_event",
+   "steps": "cs +3%"
+  }
+ ],
+ "outdir": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis",
+ "draft_sha1": "c9e155899cc66f6a2ef6f27351113516bbc5ce17",
+ "files": {
+  "summary": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/summary.md",
+  "analysis": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/analysis.json",
+  "monthly data": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/data.csv",
+  "trend chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/trend.png",
+  "growth chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/growth.png",
+  "daily diagnostic chart": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/daily.png",
+  "narrative draft (edit, then run report)": "/Users/aklim/Documents/wikipedia-interest-trends-skill/wikipedia-interest-trends-workspace/iteration-8/eval-1-intermittent-fasting-pl-cs/with_skill/run-1/outputs/analysis/narrative.md"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "eval_id": 3,
+ "eval_name": "english-learning-audiences",
+ "prompt": "Ми створюємо застосунок для вивчення мов. Порівняй інтерес до вивчення англійської у вибраних нами мовних розділах Wikipedia — польському, турецькому, іспанському, в'єтнамському та німецькому — і підготуй короткий звіт: які аудиторії варто дослідити наступними й чому?",
+ "assertions": [
+  "report.pdf exists in outputs and has exactly 1 page",
+  "response.md is written in Ukrainian",
+  "Response states the analysed period (months or dates)",
+  "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+  "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+  "Response ranks or prioritises the five language audiences explicitly",
+  "Ranking reasons use both audience size and growth (or intensity), not just one number",
+  "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+  "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+  "Does not describe a change whose 95% interval crosses zero as growth or a positive trend (e.g. 'English language · vi +2% [-21%, +31%]' is 'no clear change')",
+  "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+  "Does not name countries in place of language editions as the audiences (e.g. 'Vietnam', 'Turkey', 'Poland') unless it cites the reader-country data",
+  "Does not subtract the whole-wiki change from relative growth or compare the two as if relative growth still contained it (no double counting)",
+  "Contains no invented market facts presented as findings (market shares, numbers of speakers, revenue, 'users pay') that are not in the tool output"
+ ]
+}

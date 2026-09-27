@@ -1,0 +1,65 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": false,
+   "evidence": "auto check: PDF has 2 pages"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'період 90 днів (28 червня — 26 вересня 2026 р.)' (includes the current incomplete day)"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": false,
+   "evidence": "Growth = last 7 days vs first 7 days ('+5.2%'), no uncertainty at all"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "'статті \"English\"' in each edition"
+  },
+  {
+   "text": "Response ranks or prioritises the five language audiences explicitly",
+   "passed": true,
+   "evidence": "Tier 1: Polish, Vietnamese, Turkish"
+  },
+  {
+   "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+   "passed": true,
+   "evidence": "Uses absolute views and the 7-day 'growth'"
+  },
+  {
+   "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+   "passed": false,
+   "evidence": "No language-vs-country caveat; adds unsupported claims ('85 млн мовців', 'аніме')"
+  },
+  {
+   "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+   "passed": false,
+   "evidence": "Suggests A/B tests, but never says Wikipedia views are not purchase intent"
+  },
+  {
+   "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+   "passed": false,
+   "evidence": "Calls 7-day changes such as '+5.2%' growth with no interval at all"
+  },
+  {
+   "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+   "passed": false,
+   "evidence": "Unsupported claims: '85 млн мовців', 'молоде населення', 'аніме'"
+  }
+ ],
+ "summary": {
+  "passed": 5,
+  "failed": 6,
+  "total": 11,
+  "pass_rate": 0.45
+ }
+}

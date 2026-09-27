@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "skill_name": "wikipedia-interest-trends",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "claude-haiku-4-5 (subagents)",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-26T14:02:42Z",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 1,
+    "runs_per_eval_by_configuration": {
+      "without_skill": 1,
+      "with_skill": 1
+    },
+    "qa_correction": "2026-09-27: runs_per_configuration was the aggregator default (3); corrected to the actual number of runs per eval. See README 'Чесність оцінювання' for baseline reuse."
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.88,
+        "passed": 7,
+        "failed": 1,
+        "total": 8,
+        "time_seconds": 102.2,
+        "tokens": 51879,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: PDF has 1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Cyrillic with Ukrainian letters"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'24 місяці (1 вересня 2024 — 31 серпня 2026)', last 12 vs previous 12"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": true,
+          "evidence": "'-34% (95% довіра: -51% до -8%)', confidence 'СЕРЕДНЯ'"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "Czech article 'Přerušovaný půst' named; Polish: no article"
+        },
+        {
+          "text": "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+          "passed": true,
+          "evidence": "'польськомовна Вікіпедія взагалі не має присвяченої статті про інтервальне голодування'"
+        },
+        {
+          "text": "Czech interest is reported as declining (ground truth: relative -34%, raw -42%, 2025-09..2026-08 vs previous 12 months)",
+          "passed": true,
+          "evidence": "'спадаючий тренд інтересу', relative -34%"
+        },
+        {
+          "text": "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline",
+          "passed": false,
+          "evidence": "Uses the label 'Відносне зростання' but never explains share-of-wiki vs raw views; the whole-wiki change (cs -13%) and raw -42% are not mentioned"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 110.6,
+        "tokens": 50153,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'Період: 36 місяців (з вересня 2023 по серпень 2026)'"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": true,
+          "evidence": "-47% with 95% CI -62%..-24% and confidence 'СЕРЕДНЯ'"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "'Стаття: Q333 (Астрономія)'; but only one article for a broad topic"
+        },
+        {
+          "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+          "passed": true,
+          "evidence": "'Інтерес падає, а не зростає'"
+        },
+        {
+          "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+          "passed": true,
+          "evidence": "Trust backed by 11/12 months consistency, spike share 2%, two-year history, low volume noted"
+        },
+        {
+          "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+          "passed": true,
+          "evidence": "Mentions the Wikimedia bot-filtering artifact (May-June 2025) and low volume"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.82,
+        "passed": 9,
+        "failed": 2,
+        "total": 11,
+        "time_seconds": 156.4,
+        "tokens": 62410,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'період вересень 2024 — август 2026 (24 місяці)'"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": true,
+          "evidence": "Each language has relative growth + confidence grade; Turkish interval -20%..+43% given"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "'вимірюючи через статті про іспити IELTS і TOEFL'"
+        },
+        {
+          "text": "Response ranks or prioritises the five language audiences explicitly",
+          "passed": true,
+          "evidence": "Priority 1 Vietnamese, 2 Turkish, secondary es/de/pl"
+        },
+        {
+          "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+          "passed": true,
+          "evidence": "Uses views/month (size), relative growth and intensity per 1M"
+        },
+        {
+          "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+          "passed": true,
+          "evidence": "Section 'Мова — не країна' present, BUT it misreads the data: claims tr/vi Wikipedias 'служать переважно діаспорам' because home countries are withheld from Wikimedia's country data"
+        },
+        {
+          "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+          "passed": true,
+          "evidence": "'Вікіпедія показує цікавість читачів, а не готовність платити'"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": false,
+          "evidence": "'Турецька: +7% (НИЗЬКА довіра) — єдиний ріст' although the interval is -20%..+43%"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": false,
+          "evidence": "Misreads the geography note as 'читачі розташовані переважно в діаспорі'; PDF adds 'найвища інтенсивність ... на світі' and speaker-count claims"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 1,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.38,
+        "passed": 3,
+        "failed": 5,
+        "total": 8,
+        "time_seconds": 256.9,
+        "tokens": 70375,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": false,
+          "evidence": "auto check: PDF has 2 pages"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": false,
+          "evidence": "response.md says only 'Тренд за період' with no dates or length"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": false,
+          "evidence": "'+321.2%' and '-16.7%' with no interval or confidence"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "Names 'Głodówka lecznicza' and 'Přerušovaný půst'"
+        },
+        {
+          "text": "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+          "passed": false,
+          "evidence": "Treats 'Głodówka lecznicza' (therapeutic fasting) as the Polish intermittent-fasting article: 'Стаття про інтервальне голодування (або лікувальне голодування)'; not labelled a proxy, no content-gap finding"
+        },
+        {
+          "text": "Czech interest is reported as declining (ground truth: relative -34%, raw -42%, 2025-09..2026-08 vs previous 12 months)",
+          "passed": true,
+          "evidence": "Czech '-16.7%' decline: direction correct"
+        },
+        {
+          "text": "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline",
+          "passed": false,
+          "evidence": "Only raw totals; no normalisation or Wikipedia-wide context"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 2,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.88,
+        "passed": 7,
+        "failed": 1,
+        "total": 8,
+        "time_seconds": 176.4,
+        "tokens": 55006,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "auto check: 1 page (text-only PDF, 2.9 KB)"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'Період дослідження: 26 вересня 2024 – 26 вересня 2026' (includes the unfinished month)"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": false,
+          "evidence": "Per-article changes (e.g. 'Галактика +29.4%') and '-55.7%' carry no interval; only an overall 'Надійність тренду: Низька'"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "Lists 8 articles, though 'Місяць' (month) and 'Зірка' are wrong pages for Moon and star ('Місяць (супутник)', 'Зоря')"
+        },
+        {
+          "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+          "passed": true,
+          "evidence": "'Дані Wikipedia вказують на ЗНИЖЕННЯ'"
+        },
+        {
+          "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+          "passed": true,
+          "evidence": "Trust discussed with coefficient of variation and 7/8 articles agreeing (CV reasoning is weak)"
+        },
+        {
+          "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+          "passed": true,
+          "evidence": "Lists seasonality and overall Wikipedia traffic decline as possible causes"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 3,
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 0.45,
+        "passed": 5,
+        "failed": 6,
+        "total": 11,
+        "time_seconds": 201.6,
+        "tokens": 63148,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": false,
+          "evidence": "auto check: PDF has 2 pages"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "auto check: Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "'період 90 днів (28 червня — 26 вересня 2026 р.)' (includes the current incomplete day)"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": false,
+          "evidence": "Growth = last 7 days vs first 7 days ('+5.2%'), no uncertainty at all"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "'статті \"English\"' in each edition"
+        },
+        {
+          "text": "Response ranks or prioritises the five language audiences explicitly",
+          "passed": true,
+          "evidence": "Tier 1: Polish, Vietnamese, Turkish"
+        },
+        {
+          "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+          "passed": true,
+          "evidence": "Uses absolute views and the 7-day 'growth'"
+        },
+        {
+          "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+          "passed": false,
+          "evidence": "No language-vs-country caveat; adds unsupported claims ('85 млн мовців', 'аніме')"
+        },
+        {
+          "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+          "passed": false,
+          "evidence": "Suggests A/B tests, but never says Wikipedia views are not purchase intent"
+        },
+        {
+          "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+          "passed": false,
+          "evidence": "Calls 7-day changes such as '+5.2%' growth with no interval at all"
+        },
+        {
+          "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+          "passed": false,
+          "evidence": "Unsupported claims: '85 млн мовців', 'молоде населення', 'аніме'"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 0.9,
+        "stddev": 0.0917,
+        "min": 0.82,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 123.0667,
+        "stddev": 29.1714,
+        "min": 102.2,
+        "max": 156.4
+      },
+      "tokens": {
+        "mean": 54814.0,
+        "stddev": 6634.6952,
+        "min": 50153,
+        "max": 62410
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.57,
+        "stddev": 0.2707,
+        "min": 0.38,
+        "max": 0.88
+      },
+      "time_seconds": {
+        "mean": 211.6333,
+        "stddev": 41.1772,
+        "min": 176.4,
+        "max": 256.9
+      },
+      "tokens": {
+        "mean": 62843.0,
+        "stddev": 7689.0382,
+        "min": 55006,
+        "max": 70375
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.33",
+      "time_seconds": "-88.6",
+      "tokens": "-8029"
+    }
+  },
+  "notes": [
+    "Evals 1-3 on Haiku 4.5. With the skill: 3/3 one-page PDFs; baseline 1/3. The baseline chose wrong articles ('Місяць', 'Зірка'), used a different concept as the Polish equivalent (+321%), and computed 'growth' as last week vs first week.",
+    "With-skill weaknesses found: a single article for a broad topic, relative growth not explained, the geo note misread as 'diaspora', '+7% [-20%, +43%]' called growth."
+  ]
+}

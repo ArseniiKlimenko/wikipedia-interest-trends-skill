@@ -1,0 +1,65 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: 1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Ukrainian"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'за останні 24 місяці'"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "Each language has relative growth + confidence; the Turkish interval is given"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "'статей про іспити IELTS та TOEFL'"
+  },
+  {
+   "text": "Response ranks or prioritises the five language audiences explicitly",
+   "passed": true,
+   "evidence": "Order TR, VI, ES, then PL/DE"
+  },
+  {
+   "text": "Ranking reasons use both audience size and growth (or intensity), not just one number",
+   "passed": true,
+   "evidence": "Size, growth and intensity per language"
+  },
+  {
+   "text": "Response mentions that a language edition is not the same as a country (or gives a reader-geography caveat)",
+   "passed": true,
+   "evidence": "Now correct: 'TR та VI не розкривають дані ... але це не означає, що читачі за межами цих країн'"
+  },
+  {
+   "text": "Response notes that Wikipedia interest is not purchase intent or recommends validating with another signal",
+   "passed": true,
+   "evidence": "'Вікіпедія показує цікавість, а не готовність платити'"
+  },
+  {
+   "text": "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+   "passed": false,
+   "evidence": "'це єдиний ринок, де інтерес до вивчення англійської зростає' for +7% [-20%, +43%]"
+  },
+  {
+   "text": "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings",
+   "passed": true,
+   "evidence": "Reasons cite size, growth, intensity and confidence; the one speculation is hedged ('може вказувати')"
+  }
+ ],
+ "summary": {
+  "passed": 10,
+  "failed": 1,
+  "total": 11,
+  "pass_rate": 0.91
+ }
+}

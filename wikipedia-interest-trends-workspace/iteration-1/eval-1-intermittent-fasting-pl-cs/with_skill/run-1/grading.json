@@ -1,0 +1,50 @@
+{
+ "expectations": [
+  {
+   "text": "report.pdf exists in outputs and has exactly 1 page",
+   "passed": true,
+   "evidence": "auto check: PDF has 1 page"
+  },
+  {
+   "text": "response.md is written in Ukrainian",
+   "passed": true,
+   "evidence": "auto check: Cyrillic with Ukrainian letters"
+  },
+  {
+   "text": "Response states the analysed period (months or dates)",
+   "passed": true,
+   "evidence": "'24 місяці (1 вересня 2024 — 31 серпня 2026)', last 12 vs previous 12"
+  },
+  {
+   "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+   "passed": true,
+   "evidence": "'-34% (95% довіра: -51% до -8%)', confidence 'СЕРЕДНЯ'"
+  },
+  {
+   "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+   "passed": true,
+   "evidence": "Czech article 'Přerušovaný půst' named; Polish: no article"
+  },
+  {
+   "text": "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+   "passed": true,
+   "evidence": "'польськомовна Вікіпедія взагалі не має присвяченої статті про інтервальне голодування'"
+  },
+  {
+   "text": "Czech interest is reported as declining (ground truth: relative -34%, raw -42%, 2025-09..2026-08 vs previous 12 months)",
+   "passed": true,
+   "evidence": "'спадаючий тренд інтересу', relative -34%"
+  },
+  {
+   "text": "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline",
+   "passed": false,
+   "evidence": "Uses the label 'Відносне зростання' but never explains share-of-wiki vs raw views; the whole-wiki change (cs -13%) and raw -42% are not mentioned"
+  }
+ ],
+ "summary": {
+  "passed": 7,
+  "failed": 1,
+  "total": 8,
+  "pass_rate": 0.88
+ }
+}

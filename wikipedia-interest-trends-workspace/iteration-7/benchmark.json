@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "skill_name": "wikipedia-interest-trends",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "claude-haiku-4-5 (subagents)",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-27T17:38:12Z",
+    "evals_run": [
+      2,
+      7
+    ],
+    "runs_per_configuration": 1,
+    "runs_per_eval_by_configuration": {
+      "with_skill": 1
+    },
+    "qa_correction": "2026-09-27: runs_per_configuration was the aggregator default (3); corrected to the actual number of runs per eval. See README 'Чесність оцінювання' for baseline reuse."
+  },
+  "runs": [
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 135.9,
+        "tokens": 57652,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "last 12 vs previous 12 months"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": true,
+          "evidence": "-33% [-44%; -21%], high confidence"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "7-article expand basket named"
+        },
+        {
+          "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+          "passed": true,
+          "evidence": "'СПАДАЄ, не зростає'"
+        },
+        {
+          "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+          "passed": true,
+          "evidence": "Interval, 12 months in a row, volume"
+        },
+        {
+          "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+          "passed": true,
+          "evidence": "Bot-detection caveat and seasonality; now also runs signals: Google Trends UA -8% [-28%; +18%] (no clear change), App Store UA context, and the PDF carries both"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 145.5,
+        "tokens": 60064,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "Used the discover command on pl (discover output exists)",
+          "passed": true,
+          "evidence": "discover pl, then analyze on the sustained topics"
+        },
+        {
+          "text": "Lists at least 5 growing topics with growth and confidence",
+          "passed": true,
+          "evidence": "Morocco, Malta, Poznań, Order Odrodzenia Polski with intervals (only 4 recommended; 16 listed in the attached discover output)"
+        },
+        {
+          "text": "No person/celebrity pages among the recommended topics",
+          "passed": true,
+          "evidence": "No person pages"
+        },
+        {
+          "text": "Flags that event/news-driven items (tournaments, eclipses) are likely transient or treats LOW confidence rows as hypotheses",
+          "passed": true,
+          "evidence": "Links the June-2026 group (Senegal, Paraguay, Ivory Coast) to the World Cup and recommends only sustained topics (the heading 'Євро 2020' is a naming slip)"
+        },
+        {
+          "text": "Suggests a concrete next step (e.g. analyze a shortlisted topic, check a second signal)",
+          "passed": true,
+          "evidence": "Analyzed the shortlisted topics; suggests a Google Trends check and a re-run in 3 months"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 140.7,
+        "stddev": 6.7882,
+        "min": 135.9,
+        "max": 145.5
+      },
+      "tokens": {
+        "mean": 58858.0,
+        "stddev": 1705.5416,
+        "min": 57652,
+        "max": 60064
+      }
+    },
+    "delta": {
+      "pass_rate": "+1.00",
+      "time_seconds": "+140.7",
+      "tokens": "+58858"
+    }
+  },
+  "notes": [
+    "Re-run of the two affected evals after the fixes: astronomy now runs signals (Google Trends UA -8%, no clear change; App Store context); the pl discovery separates sustained topics from the June-2026 burst group and links it to the World Cup."
+  ]
+}

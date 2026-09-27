@@ -1,0 +1,17 @@
+{
+ "eval_id": 1,
+ "eval_name": "intermittent-fasting-pl-cs",
+ "prompt": "Порівняй зростання інтересу до інтервального голодування в польськомовній та чеськомовній Wikipedia за останні два роки.",
+ "assertions": [
+  "report.pdf exists in outputs and has exactly 1 page",
+  "response.md is written in Ukrainian",
+  "Response states the analysed period (months or dates)",
+  "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+  "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+  "Response says Polish Wikipedia has no dedicated article on intermittent fasting, or clearly labels any Polish page used as a proxy",
+  "Czech interest is reported as declining (ground truth: relative -34% [-53%, -5%], MEDIUM confidence; raw views -42%; 2025-09..2026-08 vs previous 12 months)",
+  "Response distinguishes relative interest (share of all wiki views) from raw views, or mentions the Wikipedia-wide traffic decline",
+  "Does not name countries in place of language editions as the audiences (e.g. 'Vietnam', 'Turkey', 'Poland') unless it cites the reader-country data",
+  "Does not subtract the whole-wiki change from relative growth or compare the two as if relative growth still contained it (no double counting)"
+ ]
+}

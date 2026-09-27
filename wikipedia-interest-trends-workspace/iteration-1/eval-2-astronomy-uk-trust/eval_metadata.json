@@ -1,0 +1,15 @@
+{
+ "eval_id": 2,
+ "eval_name": "astronomy-uk-trust",
+ "prompt": "Ми думаємо додати курс з астрономії до освітнього застосунку. Чи зростає інтерес до цієї теми в україномовній Wikipedia, і наскільки цьому зростанню можна довіряти?",
+ "assertions": [
+  "report.pdf exists in outputs and has exactly 1 page",
+  "response.md is written in Ukrainian",
+  "Response states the analysed period (months or dates)",
+  "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+  "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+  "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+  "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+  "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies"
+ ]
+}

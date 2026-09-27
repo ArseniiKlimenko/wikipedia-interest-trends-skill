@@ -1,0 +1,260 @@
+{
+  "metadata": {
+    "skill_name": "wikipedia-interest-trends",
+    "skill_path": "<path/to/skill>",
+    "executor_model": "claude-haiku-4-5 (subagents)",
+    "analyzer_model": "<model-name>",
+    "timestamp": "2026-09-27T17:38:12Z",
+    "evals_run": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "runs_per_configuration": 1,
+    "runs_per_eval_by_configuration": {
+      "with_skill": 1
+    },
+    "qa_correction": "2026-09-27: runs_per_configuration was the aggregator default (3); corrected to the actual number of runs per eval. See README 'Чесність оцінювання' for baseline reuse."
+  },
+  "runs": [
+    {
+      "eval_id": 2,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 8,
+        "failed": 0,
+        "total": 8,
+        "time_seconds": 111.2,
+        "tokens": 56373,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "Response states the analysed period (months or dates)",
+          "passed": true,
+          "evidence": "36 months, 2023-09..2026-08"
+        },
+        {
+          "text": "Every growth/decline claim carries an uncertainty measure (interval or explicit confidence level)",
+          "passed": true,
+          "evidence": "-33% [-44%, -21%], HIGH"
+        },
+        {
+          "text": "Response names the Wikipedia articles (or article basket/proxies) that were measured",
+          "passed": true,
+          "evidence": "7-article basket produced by expand (Астрономія, Чумацький Шлях, Галактика, Земля, Сонце, Місяць, Зоря)"
+        },
+        {
+          "text": "Response concludes that interest in astronomy on Ukrainian Wikipedia is NOT growing (ground truth: declining; basket relative about -36%, core article 'Астрономія' about -47%)",
+          "passed": true,
+          "evidence": "'NOT growing - declining'"
+        },
+        {
+          "text": "Response gives an explicit trust assessment backed by evidence (interval, month-by-month consistency, or confidence grade)",
+          "passed": true,
+          "evidence": "Interval, 12/12 months, year-over-year acceleration, confidence HIGH"
+        },
+        {
+          "text": "Response mentions at least one data caveat: seasonality, the 2025 bot-detection change, or that articles are only proxies",
+          "passed": true,
+          "evidence": "Bot-detection update and seasonality (peak Feb, low Jul) mentioned. Did not run signals although it recommends checking Google Trends"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 5,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 172.8,
+        "tokens": 65309,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "Sub-topics were found with the skill's automatic tools (expand or discover output exists), not only a hand-picked list",
+          "passed": true,
+          "evidence": "The basket comes from expand (10 verified items); sub-topics were then analysed as separate topics (discover --seed not used)"
+        },
+        {
+          "text": "Lists at least 3 sub-topics with a growth estimate and an interval or confidence level",
+          "passed": true,
+          "evidence": "Black hole -9% [-23%, +6%], Milky Way -18% [-27%, -6%], Cosmology -25% plus forecast, exoplanet, space exploration"
+        },
+        {
+          "text": "Does not call a sub-topic growing when its 95% interval crosses zero",
+          "passed": true,
+          "evidence": "'Чорна діра ... практично стабільна' for an interval crossing zero"
+        },
+        {
+          "text": "Mentions a seasonality/school-year pattern or a data caveat (bot-detection update, low volume)",
+          "passed": true,
+          "evidence": "School-holiday lows in June-July, launch Sep/Jan; bot-detection caveat"
+        },
+        {
+          "text": "Recommends a concrete starting module and ties the reason to numbers from the output",
+          "passed": true,
+          "evidence": "Start with black holes / Milky Way, with views/month and relative growth cited"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 6,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 7,
+        "failed": 0,
+        "total": 7,
+        "time_seconds": 164.5,
+        "tokens": 59146,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "report.pdf exists in outputs and has exactly 1 page",
+          "passed": true,
+          "evidence": "1 page"
+        },
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "States the seasonal peak month(s) for each of the two languages/countries from the tool output",
+          "passed": true,
+          "evidence": "cs: Jan +81%, Apr +17%; de: Jan +20%, Mar +20%"
+        },
+        {
+          "text": "Gives a 12-month forecast as a range (80% interval), not a single number, with a caveat that it is a scenario",
+          "passed": true,
+          "evidence": "cs +5% [80%: -44%, +155%], de +24% [-22%, +117%], 'не обіцянка, а екстраполяція'"
+        },
+        {
+          "text": "Reports the Google Trends result for CZ and DE and whether it agrees with Wikipedia (or clearly states it was unavailable)",
+          "passed": true,
+          "evidence": "CZ -22% [-38%, +1%] roughly agrees; DE +58% [+27%, +101%] DISAGREES, explained as a channel shift"
+        },
+        {
+          "text": "Includes App Store competition context for at least one country",
+          "passed": true,
+          "evidence": "Yazio 443,539 ratings, Fastic 131,139 in DE (calls it 'confirmation of real demand', a slight overreach)"
+        },
+        {
+          "text": "The PDF includes the Second signals section (signals were run before report)",
+          "passed": true,
+          "evidence": "signals.json was written before report.pdf, so the PDF carries the second-signal block"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "eval_id": 7,
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "pass_rate": 1.0,
+        "passed": 6,
+        "failed": 0,
+        "total": 6,
+        "time_seconds": 158.8,
+        "tokens": 63346,
+        "tool_calls": 0,
+        "errors": 0
+      },
+      "expectations": [
+        {
+          "text": "response.md is written in Ukrainian",
+          "passed": true,
+          "evidence": "Ukrainian"
+        },
+        {
+          "text": "Used the discover command on pl (discover output exists)",
+          "passed": true,
+          "evidence": "discover.json present (pl, top lists)"
+        },
+        {
+          "text": "Lists at least 5 growing topics with growth and confidence",
+          "passed": true,
+          "evidence": "Morocco, Malta (HIGH); Pius X society, Paraguay, Ivory Coast, Senegal (MEDIUM), with intervals"
+        },
+        {
+          "text": "No person/celebrity pages among the recommended topics",
+          "passed": true,
+          "evidence": "No person pages (filtered by the tool)"
+        },
+        {
+          "text": "Flags that event/news-driven items (tournaments, eclipses) are likely transient or treats LOW confidence rows as hypotheses",
+          "passed": true,
+          "evidence": "LOW rows called hypotheses; BUT it presents Morocco/Senegal/Ivory Coast/Paraguay as an 'African geography trend with a June peak' instead of recognising the 2026 World Cup, which they share"
+        },
+        {
+          "text": "Suggests a concrete next step (e.g. analyze a shortlisted topic, check a second signal)",
+          "passed": true,
+          "evidence": "Validate with signals, re-check in 3 months"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1.0,
+        "stddev": 0.0,
+        "min": 1.0,
+        "max": 1.0
+      },
+      "time_seconds": {
+        "mean": 151.825,
+        "stddev": 27.6866,
+        "min": 111.2,
+        "max": 172.8
+      },
+      "tokens": {
+        "mean": 61043.5,
+        "stddev": 4037.7417,
+        "min": 56373,
+        "max": 65309
+      }
+    },
+    "delta": {
+      "pass_rate": "+1.00",
+      "time_seconds": "+151.8",
+      "tokens": "+61044"
+    }
+  },
+  "notes": [
+    "v1.1 features on Haiku 4.5, with-skill only: astronomy regression (now with the expand basket), growing sub-topics, seasonality + forecast + Google Trends, what grows in pl.wikipedia. All assertions pass.",
+    "Quality problems found by reading the answers: signals not run in the astronomy case; the pl discovery presented World-Cup countries as an 'African geography trend'. Fixed in the tool (signals suggestion; burst/shared-peak detection in discover)."
+  ]
+}

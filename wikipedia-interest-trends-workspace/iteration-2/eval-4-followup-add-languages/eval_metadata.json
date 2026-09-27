@@ -1,0 +1,16 @@
+{
+ "eval_id": 4,
+ "eval_name": "followup-add-languages",
+ "prompt": "[Контекст розмови: раніше ти вже проаналізував інтерес до вивчення англійської у польському, турецькому, іспанському, в'єтнамському та німецькому розділах Wikipedia; твої попередні результати, відповідь і звіт лежать у папці /Users/aklim/Library/Application Support/Claude/scratch-workspaces/7263d695-1594-4b85-9a91-4b8981276957/c8849df8-2684-489e-ad25-c2cb19bfaf45/scratch-2026-09-26-3e841e/wikipedia-interest-trends-workspace/iteration-1/eval-3-english-learning-audiences/with_skill/run-1/outputs]\n\nНове повідомлення користувача: «Дякую! Додай ще португальську та українську аудиторії. І для нас зростання важливіше за розмір аудиторії — перерахуй рейтинг з цим урахуванням і онови звіт.»",
+ "assertions": [
+  "report.pdf exists in outputs and has exactly 1 page",
+  "response.md is written in Ukrainian",
+  "The updated analysis covers all seven language editions (pl, tr, es, vi, de, pt, uk)",
+  "Measurement stays consistent with the previous analysis (same articles/basket), or the response explains what changed and why",
+  "The new ranking explicitly gives growth more weight than audience size, and the response says so",
+  "Growth figures for the new languages carry an uncertainty measure (interval or confidence level)",
+  "Response states how the recommendation or ranking changed compared with the previous version",
+  "Does not describe a change whose 95% interval crosses zero as growth (e.g. Turkish +7% [-20%, +43%] is 'no clear change')",
+  "Reasons are grounded in the data: no unsupported outside claims (competition, market size, demographics) or misreadings of the metrics presented as findings"
+ ]
+}

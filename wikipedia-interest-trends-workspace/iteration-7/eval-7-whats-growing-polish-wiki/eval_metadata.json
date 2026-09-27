@@ -1,0 +1,13 @@
+{
+ "eval_id": 7,
+ "eval_name": "whats-growing-polish-wiki",
+ "prompt": "Що зараз найбільше набирає інтерес у польськомовній Вікіпедії, окрім новин про знаменитостей? Шукаємо ідеї для контенту.",
+ "assertions": [
+  "response.md is written in Ukrainian",
+  "Used the discover command on pl (discover output exists)",
+  "Lists at least 5 growing topics with growth and confidence",
+  "No person/celebrity pages among the recommended topics",
+  "Flags that event/news-driven items (tournaments, eclipses) are likely transient or treats LOW confidence rows as hypotheses",
+  "Suggests a concrete next step (e.g. analyze a shortlisted topic, check a second signal)"
+ ]
+}
